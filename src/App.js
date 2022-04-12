@@ -8,11 +8,11 @@ const onDragEnd = (result) =>{
 
 function App() {
   return (
-    <DragDropContext onDragEnd={onDragEnd}>
+    // <DragDropContext onDragEnd={onDragEnd}>
       <div className="App">
       <AllEmployees></AllEmployees>
       </div>
-    </DragDropContext>
+    // </DragDropContext>
   );
 }
 

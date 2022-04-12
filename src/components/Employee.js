@@ -9,9 +9,10 @@ import {Draggable} from 'react-beautiful-dnd'
 
 function Employee(props) {
     return (
-        <Draggable draggableId={props.employee.id}>
+        <Draggable draggableId={props.employee.id} index={props.index}>
             {(provided)=>{
-                <TableRow {...provided.draggableProps} {...provided.dragHandleProps} innerRef={provided.innerRef}>
+                return(
+                <TableRow ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} >
                     <TableCell component="th" scope="row">
                     {props.employee.id}
                     </TableCell>
@@ -27,7 +28,8 @@ function Employee(props) {
                         <Button><EqualizerIcon/></Button>
                         <Button><MoreHorizIcon/></Button>
                     </TableCell>
-                </TableRow>
+                </TableRow>)
+                
 
             }}
             
