@@ -2,9 +2,6 @@ import './App.css';
 import AllEmployees from './components/AllEmployees';
 import {DragDropContext} from 'react-beautiful-dnd'
 
-const onDragEnd = (result) =>{
-  
-}
 
 function App() {
   return (

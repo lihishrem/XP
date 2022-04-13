@@ -13,26 +13,17 @@ function Employee(props) {
             {(provided)=>{
                 return(
                 <TableRow ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} >
-                    <TableCell component="th" scope="row">
-                    {props.employee.id}
-                    </TableCell>
-                    <TableCell align="right">
-                        <CircleIcon style={{color: props.employee.isConnected? "green" : "orange"}}/>
-                        {props.employee.name}
-                    </TableCell>
-                    <TableCell align="center">{props.employee.unusalHours}</TableCell>
-                    <TableCell align="center">{props.employee.manualHours}</TableCell>
-                    <TableCell align="center">{props.employee.hours}</TableCell>
-                    <TableCell align="center">{props.employee.totalHours}</TableCell>
-                    <TableCell align="center">
-                        <Button><EqualizerIcon/></Button>
-                        <Button><MoreHorizIcon/></Button>
-                    </TableCell>
+                    {props.columnOrder.map((column,index)=>{
+                        return(
+                            <TableCell align="center" key={index}>
+                                {props.employee[column]}
+                                {(column === "name") &&  <CircleIcon style={{color: props.employee.isConnected? "green" : "orange"}}/>}
+                                {(column === "options") &&  <Button><EqualizerIcon/></Button> }
+                                {(column === "options") && <Button><MoreHorizIcon/></Button>}  
+                            </TableCell>) 
+                    })}
                 </TableRow>)
-                
-
             }}
-            
         </Draggable>
     );
 }
