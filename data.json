@@ -1,0 +1,39 @@
+{"top-updates": [
+    {
+        "date": "Mon, 6 June",
+        "openInNewTab": true,
+        "text": "A fresh new case study with StreetPunks is now live @https://xp.network/streetpunks/[@]"
+    }, 
+    {
+        "date": "Sun, 5 June",
+        "openInNewTab": true,
+        "text": "For those of you who missed our AMA with Fantom Community - You can watch it here @https://www.youtube.com/watch?v=6D81qchzZAY[@]"
+    },
+    {
+        "date": "Thu, 2 June",
+        "openInNewTab": true,
+        "text": "GateChain is now live on the multi-chain NFT bridge @https://bridge.xp.network[@]"
+    }
+],
+"bot-updates": [
+    {
+        "date": "Thursday, June 2",
+        "link": "https://blog.xp.network/xp-network-bridge-adds-gatechain-the-blockchain-created-by-gate-io-bae13ab567e1",
+        "text": "XP.NETWORK bridge adds GateChain, the blockchain created by Gate.io",
+        "url": "/assets/img/updates/GateChain_integration_small.png"
+    }, 
+    {
+        "date": "Wed, June 1",
+        "link": "https://blog.xp.network/cross-chain-gamefi-which-projects-have-expanded-to-new-chains-a41a784a829f",
+        "text": "Cross-chain GameFi: Which projects have expanded to new chains?",
+        "url": "/assets/img/updates/Cross-chain_GameFi.png"
+    }, 
+    {
+        "date": "Tuesday, May 24",
+        "border": "1px solid #ebecef",
+        "link": "https://blog.xp.network/xp-network-to-integrate-ton-a-blockchain-built-by-telegram-de0b965f80b7",
+        "text": "XP.NETWORK to integrate TON, a blockchain built by Telegram",
+        "url": "/assets/img/updates/XP.NETWORK_NFT_bridge_to_intergrate_TON.png"
+    }
+]}
+  

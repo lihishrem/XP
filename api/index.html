@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="twitter:title" content="Tearing down walls between blockchains" />
+  <meta name="twitter:site" content="@xpnetwork_" />
+  <meta name="twitter:description"
+    content="Go multichain effortlessly: XP.NETWORK supports more chains than any other NFT protocol." />
+  <meta name="twitter:image" content="https://xp.network/assets/img/XPMeta.png" />
+
+  <meta property="og:title" content="Tearing down walls between blockchains" />
+  <meta property="og:url" content="https://xp.network/" />
+  <meta property="og:image" content="https://xp.network/assets/img/XPMeta.png" />
+
+  <title>XP-NETWORK | API</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <!-- owl.carousel -->
+  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css" />
+  <!-- Main Css -->
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../other.css" />
+  <!-- Responsive Css -->
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
+</head>
+
+<body>
+  <div class="bodyWrap apiPage">
+    <div class="sidebar_form">
+      <span class="close_form"><img src="/assets/img/icons/close.svg" /></span>
+      <div class="sideForm_container">
+        <div class="form_content">
+          <div class="welcome_cont">
+            <h6>Go multichain today</h6>
+            <p>
+              Contact us to integrate Multichain NFT bridge to your NFT dApp
+            </p>
+          </div>
+          <div class="submit_cont" style="display: none">
+            <h6>Thank you for your request</h6>
+            <p>We will reach you shortly</p>
+          </div>
+        </div>
+        <div class="sideForm">
+          <form action="#" id="sideContact">
+            <div class="inpCol">
+              <!-- /.invalidField    == this class for error message-->
+              <label for="Projectname">Project name</label>
+              <input type="text" name="Projectname" id="Projectname" required />
+              <span class="invalidText">This field is required</span>
+            </div>
+            <div class="inpCol">
+              <label for="Projectwebsite">Project website</label>
+              <input type="text" name="Projectwebsite" id="Projectwebsite" required />
+              <span class="invalidText">This field is required</span>
+            </div>
+            <div class="inpCol">
+              <label for="Contactname">Contact name</label>
+              <input type="text" name="Contactname" id="Contactname" required />
+              <span class="invalidText">This field is required</span>
+            </div>
+            <div class="inpCol emailPlanField">
+              <label for="">Email</label>
+              <input type="text" name="plan_email" id="plan_email" required />
+              <span class="invalidText">This field is required</span>
+            </div>
+            <div class="inpCol">
+              <label for="">Telegram<span class="emailSlice">/Email</span>/Discord</label>
+              <input type="text" name="teleg_email_disc" id="teleg_email_disc" required />
+              <span class="invalidText">This field is required</span>
+            </div>
+            <div class="inpCol">
+              <label for="Message">Message</label>
+              <textarea name="Message" id="Message"></textarea>
+              <span class="invalidText">This field is required</span>
+            </div>
+            <div class="inpCol reCaptcha" style="display: none">
+              <img src="assets/img/checkbox.png" />
+            </div>
+            <div class="form_btn">
+              <div id="captcha2" style="transform: scale(0.85); transform-origin: 0 0"></div>
+              <button type="submit" class="whiteBtn" style="color: black">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <header class="site_header" id="header">
+      <div class="container">
+        <nav class="nare_area">
+          <div class="nav_brand">
+            <a href="index.html"><img src="../assets/img/logo.svg" alt="XP-NETWORK" /></a>
+            <a href="#" class="xpnet-balance desktop_only"><img src="../assets/img/xpnet-balance.svg" />
+              <span>$0.01286</span></a>
+          </div>
+          <div class="nav_menu_area">
+            <a href="#" class="xpnet-balance mobileOnly"><img src="../assets/img/xpnet-balance.svg" />
+              <span>$0.01286</span></a>
+            <ul class="main_menu">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Use cases</a>
+              </li>
+              <li class="nav-item mega-menu">
+                <a href="#" class="nav-link">Resources</a>
+                <div class="drop-menu resuouceMega">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="resou_menu_box">
+                        <img src="../assets/img/icons/Docs.svg" class="menu_icon" />
+                        <h6>Docs</h6>
+                        <p>
+                          API documentation, tutorials, and other resources
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="resou_menu_box">
+                        <img src="../assets/img/icons/roadmap.svg" class="menu_icon" />
+                        <h6>Roadmap</h6>
+                        <p>Follow our journey from inception to launch.</p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="resou_menu_box">
+                        <img src="../assets/img/icons/Whitepaper.svg" class="menu_icon" />
+                        <h6>Whitepaper</h6>
+                        <p>
+                          A closer look at the architecture, bridging
+                          algorithm, and security
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="resou_menu_box">
+                        <img src="../assets/img/icons/roadmap.svg" class="menu_icon" />
+                        <h6>
+                          GitHub
+                          <span class="gitLate">
+                            <span class="wave"></span> Latest Jan
+                            17,2022</span>
+                        </h6>
+                        <p>The latest technical updates & code releases</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item mega-menu">
+                <a href="#" class="nav-link">Community</a>
+                <div class="drop-menu communityMegamenu">
+                  <div class="comm_megaIitem">
+                    <img src="../assets/img/xp-commu.svg" />
+                    <h6>XP Community</h6>
+                    <a href="#" class="black_text_btn smalBtn">Learn more -></a>
+                  </div>
+                  <div class="comm_megaIitem">
+                    <img src="../assets/img/xp-stories.svg" />
+                    <h6>XP Stories and news</h6>
+                    <a href="#" class="black_text_btn smalBtn">Learn more -></a>
+                  </div>
+                  <div class="mega_black_box">
+                    <div class="mega_black_img">
+                      <img src="../assets/img/mega_black_img.svg" />
+                    </div>
+                    <div class="mega_black_cont">
+                      <h4>Become an XP.NETWORK Ambassador</h4>
+                      <p>
+                        Lead your local XP.NETWORK community, help us promote
+                        the Bridge, and earn rewards.
+                      </p>
+                      <a href="#" class="grayBtn">Coming soon</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="social-links">
+              <li>
+                <a href="#"><img src="../assets/img/social/telegram.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../assets/img/social/twiter.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../assets/img/social/redit.svg" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile_nav_triger mobileOnly">
+            <span class="navTriger"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="api_heroarea">
+        <div class="container">
+          <div class="api_container">
+            <div class="home_content">
+              <h1>Go multichain today</h1>
+              <p>
+                XP.NETWORK JS API will get your NFT dApp or collection up and
+                running on multiple chains faster than you can say
+                ‘chain-agnostic’.
+              </p>
+              <div class="dual_btns">
+                <a href="https://github.com/xp-network/" target="_blank" rel="noopener noreferrer"
+                  class="black_btn"><img src="../assets/img/social/github_black.svg" /> GitHub
+                  Docs</a>
+                <a href="https://bridge.xp.network/" target="_blank" rel="noopener noreferrer"
+                  class="black_text_btn">Try the bridge -></a>
+              </div>
+            </div>
+            <div class="api_form">
+              <img src="/assets/img/API desktop.svg" class="desktop_only" alt="api">
+              <img src="/assets/img/api/API.svg" class="mobileOnly" alt="api">
+              <!--<img
+                  src="../assets/img/api/apicontact_bg.svg"
+                  class="contact_api_bg desktop_only"
+                />
+                <img
+                  src="../assets/img/api/apicontact_bg-mob.svg"
+                  class="contact_api_bg mobileOnly"
+                />
+                <div class="form_container">
+                  <div class="form_top">
+                    <img src="../assets/img/api/contact_logo.svg" alt="" />
+                    <p>
+                      Integrate your NFT dApp <br />
+                      in less than 1 hour
+                    </p>
+                  </div>
+                  <form action="#" id="contactForm">
+                    <div class="inpCol">
+                   
+                      <label for="Projectname">Project name</label>
+                      <input
+                        type="text"
+                        name="Projectname"
+                        id="Projectname"
+                        required
+                      />
+                      <span class="invalidText">This field is required</span>
+                    </div>
+                    <div class="inpCol">
+                      <label for="Contactname">Contact name</label>
+                      <input
+                        type="text"
+                        name="Contactname"
+                        id="Contactname"
+                        required
+                      />
+                      <span class="invalidText">This field is required</span>
+                    </div>
+                    <div class="inpCol">
+                      <label for="">Telegram/Email/Discord</label>
+                      <input
+                        type="text"
+                        name="teleg_email_disc"
+                        id="teleg_email_disc"
+                        required
+                      />
+                      <span class="invalidText">This field is required</span>
+                    </div>
+                    <div class="inpCol">
+                      <label for="Message">Message</label>
+                      <textarea name="Message" id="Message"></textarea>
+                      <span class="invalidText">This field is required</span>
+                    </div>
+                    <div class="form_btn">
+                      <div
+                        id="captcha1"
+                        style="transform: scale(0.85); transform-origin: 0 0"
+                      ></div>
+                      <button type="submit" class="black_btn">
+                        Contact us
+                      </button>
+                    </div>
+                  </form>-->
+            </div>
+          </div>
+        </div>
+  </div>
+  </section>
+
+  <section class="chain_slider_area api_page_chain">
+    <div class="container">
+      <div class="section_title text-center" id="section-title-integrated-chains">
+        <h2>Partners and integrated chains</h2>
+      </div>
+      <div class="chaain_slide_contetn">
+        <div class="chainSlide_desktop">
+          <div class="owl-carousel chain_slide_desk">
+            <div class="chain_slide_item">
+              <ul>
+                <li>
+                  <img src="/assets/img/chain/chains logos/algorand.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/aurora.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/avalanche.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/bsc.svg" alt="Chain" />
+                </li>
+
+                <li>
+                  <img src="/assets/img/chain/chains logos/cardano.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/elrond.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/ethereum.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/fantom.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/fuse.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/gnosis chain.svg" alt="Chain" />
+                </li>
+              </ul>
+            </div>
+            <div class="chain_slide_item">
+              <ul>
+                <li>
+                  <img src="/assets/img/chain/chains logos/harmony.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/iotex.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/near.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/polygon.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/quartz.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/secret.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/solana.svg" alt="Chain" />
+                </li>
+
+                <li>
+                  <img src="/assets/img/chain/chains logos/tezos.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/tron.svg" alt="Chain" />
+                </li>
+                <li>
+                  <img src="/assets/img/chain/chains logos/velas.svg" alt="Chain" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="chain_slide_mobile">
+          <div class="chain_slide_top_side">
+            <div class="chainSlider_mob_top owl-carousel">
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_1.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_2.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_3.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_4.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_5.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_6.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_7.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_8.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_9.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_10.svg" alt="Chain" />
+              </div>
+            </div>
+          </div>
+          <div class="chain_slide_bottom_side">
+            <div class="chainSlider_mob owl-carousel">
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_11.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_12.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_13.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_14.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_15.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_16.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_17.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_18.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_19.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_20.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_21.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_22.svg" alt="Chain" />
+              </div>
+              <div class="chain_slide">
+                <img src="../assets/img/chain/chain_23.svg" alt="Chain" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chain_bgn">
+          <a href="#" class="black_text_btn IntegrateBtn">Integrate your chain -></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature_nft_area api_feature_area">
+    <div class="container">
+      <div class="section_title text-center">
+        <h5>Features</h5>
+        <h2>6 reasons to try XPJS API</h2>
+      </div>
+      <div class="white_boxes">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="white_box api_white_box">
+              <img src="../assets/img/api/feature_1.svg" alt="WEB 3.0 JS API" class="card_img" />
+              <h6>EVM & non-EVM chains</h6>
+              <p>
+                XP.NETWORK supports 15+ blockchains - more than any other
+                NFT bridge
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="white_box api_white_box">
+              <img src="../assets/img/api/feature_2.svg" alt="WEB 3.0 JS API" class="card_img" />
+              <h6>Support for all wallets</h6>
+              <p>
+                Let users connect and pay with any popular blockchain
+                wallet - and with any cryptocurrency
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="white_box api_white_box">
+              <img src="../assets/img/api/feature_3.svg" alt="WEB 3.0 JS API" class="card_img" />
+              <h6>Multi-chain minting</h6>
+              <p>
+                Why choose on which chain to launch when you can mint on
+                all of them?
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="white_box api_white_box">
+              <img src="../assets/img/api/feature_4.svg" alt="WEB 3.0 JS API" class="card_img" />
+              <h6>New audiences</h6>
+              <p>
+                Reach out to the NFT crowds on other chains and boost your
+                liquidity and sales
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="white_box api_white_box">
+              <img src="../assets/img/api/feature_5.svg" alt="WEB 3.0 JS API" class="card_img" />
+              <h6>Increased security</h6>
+              <p>
+                Our multi-layered security system can prevent even the
+                most advanced attacks
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="white_box api_white_box">
+              <img src="../assets/img/api/feature_6.svg" alt="WEB 3.0 JS API" class="card_img" />
+              <h6>Turn-key solution</h6>
+              <p>
+                The API is supremely easy to integrate and use for any
+                project
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer_area">
+    <div class="container">
+      <div class="section_title text-center">
+        <h5>Integration plan</h5>
+        <h2>
+          Pick the perfect offer for your <br />
+          needs
+        </h2>
+        <p>
+          XP.NETWORK has integration plans for all NFT projects: from MVPs
+          <br />
+          to actively scaling ecosystems. Not sure what’s best for you?
+          Ask us!
+        </p>
+      </div>
+      <div class="offer_row row">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="offer_box">
+            <h2>Standard</h2>
+            <ul class="offer_feature">
+              <li>Up to 20K tx/annually</li>
+              <li>Dashboard & Analytics</li>
+              <li>Widget App</li>
+              <li>Coding guidelines</li>
+              <li>Unlimited Chains</li>
+              <li>ERC-721/1155 Standard</li>
+              <li>3 consulting sessions</li>
+              <li>Support by available manager</li>
+            </ul>
+            <div class="feature_btn">
+              <a href="#" class="black_btn NFTdApp withPlan">Request a quote
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="offer_box professionalOff">
+            <h2>Professional</h2>
+            <ul class="offer_feature">
+              <li>Up to 100K tx/annually</li>
+              <li>Dashboard & Analytics</li>
+              <li>Widget App</li>
+              <li>Coding guidelines</li>
+              <li>Custom Wrapped NFT</li>
+              <li>Unlimited Chains</li>
+              <li>ERC-721/1155 Standard</li>
+              <li>Unlimited consulting sessions</li>
+              <li>Personal support manager</li>
+            </ul>
+            <div class="feature_btn">
+              <a href="#" class="black_btn NFTdApp withPlan">Request a quote
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="offer_box customeOff">
+            <h2>Custom</h2>
+            <ul class="offer_feature">
+              <li>Unlimited</li>
+              <li>Dashboard & Analytics</li>
+              <li>Widget App</li>
+              <li>Coding guidelines</li>
+              <li>Custom Wrapped NFT</li>
+              <li>Unlimited Chains</li>
+              <li>ERC-721/1155 Standard</li>
+              <li>Unlimited consulting sessions</li>
+              <li>Personalized support</li>
+            </ul>
+            <div class="feature_btn">
+              <a href="#" class="black_btn NFTdApp withPlan">Request a quote
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nft_markect">
+    <div class="container">
+      <div class="section_title text-center title-nft-market">
+        <h2>Powering the future of the NFT market</h2>
+        <p>
+          Our network of partners is growing every day. Join us and
+          discover <br />
+          the power of multichain NFTs!
+        </p>
+      </div>
+      <div class="power_feature_container">
+        <div class="power_feature_slider owl-carousel">
+          <div class="pow_fea_slid">
+            <img src="../assets/img/api/newlogos/theos.svg" alt="Powering the future" />
+          </div>
+
+          <div class="pow_fea_slid">
+            <img src="../assets/img/api/newlogos/finance.svg" alt="Powering the future" />
+          </div>
+
+          <div class="pow_fea_slid">
+            <img src="../assets/img/api/newlogos/snafu.svg" alt="Powering the future" />
+          </div>
+
+          <div class="pow_fea_slid">
+            <img src="../assets/img/api/newlogos/opulous.svg" alt="Powering the future" />
+          </div>
+          <div class="pow_fea_slid">
+            <img src="../assets/img/api/newlogos/fuse.svg" alt="Powering the future" />
+          </div>
+          <!-- <div class="pow_fea_slid">
+                  <img
+                    src="../assets/img/api/power_feature_6.svg"
+                    alt="Powering the future"
+                  />
+                </div>
+                 <div class="pow_fea_slid">
+                  <img
+                    src="../assets/img/api/power_feature_7.svg"
+                    alt="Powering the future"
+                  />
+                </div>-->
+        </div>
+      </div>
+      <div class="testimonia_slide_box desktop_only">
+
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="test-items straight">
+              <div class="test-Top_cont">
+                <img src="/assets/img/home/tron.svg" alt="TRON" />
+                <p>
+                  “It is a pleasure to have such a great opportunity to
+                  cooperate with XP.NETWORK for the coming projects, looking
+                  forward to building a stronger and better NFT chain
+                  together, make the dream happening!!!”
+                </p>
+              </div>
+              <div class="testi_aut">
+                <img src="/assets/img/home/H.E Mr. Justin (Yuchen) SUN_tron.png" alt="H.E Mr. Justin (Yuchen) SUN" />
+                <div class="testiautho">
+                  <h4>H.E Mr. Justin (Yuchen) SUN,</h4>
+                  <p>
+                    Ambassador, Permanent Representative of Grenada to the
+                    WTO. Founder of TRON.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="test-items straight">
+              <div class="test-Top_cont">
+                <img src="/assets/img/api/newlogos/Polygon logo testimon.svg" alt="Polygon" />
+                <p>
+                  “Our partnership with XP.NETWORK is an excellent opportunity to become an active part of a fascinating
+                  transition sweeping the world. We can't wait to see what we can achieve together - knowing what we do
+                  here will echo for the rest of the decade.“
+                </p>
+              </div>
+              <div class="testi_aut">
+                <img src="/assets/img/home/poLygon photo_main.png" alt="Davis Workman" />
+                <div class="testiautho">
+                  <h4>Sandeep Nailwal,
+                  </h4>
+                  <p>Co-Founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="test-items straight">
+              <div class="test-Top_cont">
+                <img src="/assets/img/home/elrond.svg" alt="elrond" />
+                <p>
+                  “Deploying multichain interoperability bridges is the Web3 equivalent of setting up new trade routes
+                  between countries: a vector of growth for all the involved economies. The XP Network multichain NFT
+                  bridge stands to make a significant contribution to the new internet and the broader metaverse
+                  economy.”
+                </p>
+              </div>
+              <div class="testi_aut">
+                <img src="/assets/img/home/Beniamin Mincu Elrond.png" alt="Benjamin" />
+                <div class="testiautho">
+                  <h4>Beniamin Mincu,
+                  </h4>
+                  <p>Elrond Network CEO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="test-items straight">
+              <div class="test-Top_cont">
+                <img src="/assets/img/api/fuze.svg" alt="FUZE" />
+                <p>
+                  “NFTs have been a blast for the crypto space lately, its
+                  major growth engine, and they became popular far beyond
+                  the community of crypto geeks. As Fuse is focused on
+                  bringing crypto to the masses, we have to bring NFTs to
+                  the people, too, in the most convenient manner possible.
+                  This includes enabling them to benefit from the whole NFT
+                  market as it exists across multiple blockchains.
+                  XP.NETWORK enables us to smoothly achieve the latter.”
+                </p>
+              </div>
+              <div class="testi_aut">
+                <img src="/assets/img/home/marc.png" alt="Mark Smargon" />
+                <div class="testiautho">
+                  <h4>Mark Smargon
+                  </h4>
+                  <p>Founder and CEO of Fuse</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+        <div class="testimonia_slide owl-carousel" style="display: none;">
+          <div class="test-items testislide_item">
+            <div class="test-Top_cont">
+              <img src="/assets/img/api/newlogos/Polygon logo testimon.svg" alt="Polygon" />
+              <p>
+                “XP.NETWORK takes the lead in building the infrastructure
+                of the future economy. It is our pleasure to be a part of
+                the groundbreaking process. Let the NFTs flow free and
+                make this dream come true!“
+              </p>
+            </div>
+            <div class="testi_aut">
+              <img src="/assets/img/api/polygon photo_API.png" alt="Davis Workman" />
+              <div class="testiautho">
+                <h4>Sandeep Nailwal,</h4>
+                <p>Co-Founder</p>
+              </div>
+            </div>
+          </div>
+          <div class="test-items testislide_item">
+            <div class="test-Top_cont">
+              <img src="/assets/img/home/tron.svg" alt="elrond" />
+              <p>
+                “It is a pleasure to have such a great opportunity to
+                cooperate with XP.NETWORK for the coming projects, looking
+                forward to building a stronger and better NFT chain
+                together, make the dream happening!!!”
+              </p>
+            </div>
+            <div class="testi_aut">
+              <img src="/assets/img/api/Tron _api.png" alt="sun" />
+              <div class="testiautho">
+                <h4>H.E Mr. Justin (Yuchen) SUN,</h4>
+                <p>
+                  Ambassador, Permanent Representative of Grenada to the
+                  WTO. Founder of TRON.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="test-items testislide_item">
+            <div class="test-Top_cont">
+              <img src="/assets/img/api/fuze.svg" alt="fuze" />
+              <p>
+                “NFTs have been a blast for the crypto space lately, its
+                major growth engine, and they became popular far beyond
+                the community of crypto geeks. As Fuse is focused on
+                bringing crypto to the masses, we have to bring NFTs to
+                the people, too, in the most convenient manner possible.
+                This includes enabling them to benefit from the whole NFT
+                market as it exists across multiple blockchains.
+                XP.NETWORK enables us to smoothly achieve the latter.”
+              </p>
+            </div>
+            <div class="testi_aut">
+              <img src="/assets/img/home/fuse photo.png" alt="Davis Workman" />
+              <div class="testiautho">
+                <h4>Mark Smargon,</h4>
+                <p>Founder and CEO of Fuse</p>
+              </div>
+            </div>
+          </div>
+          <!--<div class="test-items testislide_item" >
+                  <div class="test-Top_cont">
+                    <img src="../assets/img/home/tron.svg" alt="TRON" />
+                    <p>
+                      With XP.NETWORK, an NFT minted on one blockchain can be
+                      sold and traded on any connected chain, reaching a much
+                      wider audience. With XP.NETWORK, an NFT
+                    </p>
+                  </div>
+                  <div class="testi_aut">
+                    <img
+                      src="../assets/img/api/carousel_1.png"
+                      alt="Davis Workman"
+                    />
+                    <div class="testiautho">
+                      <h4>Davis Workman,</h4>
+                      <p>CEO</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="test-items testislide_item">
+                  <div class="test-Top_cont">
+                    <img
+                      src="../assets/img/home/elrond_icon.svg"
+                      alt="elrond"
+                    />
+                    <p>
+                      With XP.NETWORK, an NFT minted on one blockchain can be
+                      sold and traded on any connected chain, reaching a much
+                      wider audience. With XP.NETWORK, an NFT
+                    </p>
+                  </div>
+                  <div class="testi_aut">
+                    <img
+                      src="../assets/img/api/carousel_2.png"
+                      alt="Davis Workman"
+                    />
+                    <div class="testiautho">
+                      <h4>Davis Workman,</h4>
+                      <p>CEO</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="test-items testislide_item">
+                  <div class="test-Top_cont">
+                    <img src="../assets/img/home/opulous.svg" alt="opulous" />
+                    <p>
+                      With XP.NETWORK, an NFT minted on one blockchain can be
+                      sold and traded on any connected chain, reaching a much
+                      wider audience. With XP.NETWORK, an NFT
+                    </p>
+                  </div>
+                  <div class="testi_aut">
+                    <img
+                      src="../assets/img/api/carousel_3.png"
+                      alt="Davis Workman"
+                    />
+                    <div class="testiautho">
+                      <h4>Davis Workman,</h4>
+                      <p>CEO</p>
+                    </div>
+                  </div>
+                </div>-->
+        </div>
+
+      </div>
+      <div class="testimonia_slide_box mobileOnly">
+        <div class="row">
+          <div class="col-sm-6 col-12">
+            <div class="test-items testislide_item">
+              <div class="test-Top_cont">
+                <img src="/assets/img/api/newlogos/Polygon logo testimon.svg" alt="Polygon" />
+                <p>
+                  “XP.NETWORK takes the lead in building the infrastructure
+                  of the future economy. It is our pleasure to be a part of
+                  the groundbreaking process. Let the NFTs flow free and
+                  make this dream come true!“
+                </p>
+              </div>
+              <div class="testi_aut">
+                <img src="/assets/img/home/poLygon photo_main.png" alt="Davis Workman" />
+                <div class="testiautho">
+                  <h4>Sandeep Nailwal,</h4>
+                  <p>Co-Founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12">
+            <div class="test-items testislide_item">
+              <div class="test-Top_cont">
+                <img src="/assets/img/home/tron.svg" alt="elrond" />
+                <p>
+                  “It is a pleasure to have such a great opportunity to
+                  cooperate with XP.NETWORK for the coming projects, looking
+                  forward to building a stronger and better NFT chain
+                  together, make the dream happening!!!”
+                </p>
+              </div>
+              <div class="testi_aut">
+                <img src="/assets/img/home/H.E Mr. Justin (Yuchen) SUN_tron.png" alt="sun" />
+                <div class="testiautho">
+                  <h4>H.E Mr. Justin (Yuchen) SUN,</h4>
+                  <p>
+                    Ambassador, Permanent Representative of Grenada to the
+                    WTO. Founder of TRON.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12">
+            <div class="test-items testislide_item">
+              <div class="test-Top_cont">
+                <img src="/assets/img/api/fuze.svg" alt="fuze" />
+                <p>
+                  “NFTs have been a blast for the crypto space lately, its
+                  major growth engine, and they became popular far beyond
+                  the community of crypto geeks. As Fuse is focused on
+                  bringing crypto to the masses, we have to bring NFTs to
+                  the people, too, in the most convenient manner possible.
+                  This includes enabling them to benefit from the whole NFT
+                  market as it exists across multiple blockchains.
+                  XP.NETWORK enables us to smoothly achieve the latter.”
+                </p>
+              </div>
+              <div class="testi_aut">
+                <img src="/assets/img/home/fuse photo.png" alt="Davis Workman" />
+                <div class="testiautho">
+                  <h4>Mark Smargon,</h4>
+                  <p>Founder and CEO of Fuse</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-12">
+            <div class="test-items straight">
+              <div class="test-Top_cont">
+                <img src="/assets/img/home/elrond.svg" alt="elrond" />
+                <p>
+                  “Deploying multichain interoperability bridges is the Web3 equivalent of setting up new trade routes
+                  between countries: a vector of growth for all the involved economies. The XP Network multichain NFT
+                  bridge stands to make a significant contribution to the new internet and the broader metaverse
+                  economy.”
+                </p>
+              </div>
+              <div class="testi_aut">
+                <img src="/assets/img/home/Beniamin Mincu Elrond.png" alt="Benjamin" />
+                <div class="testiautho">
+                  <h4>Beniamin Mincu,
+                  </h4>
+                  <p>Elrond Network CEO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dual_btns">
+        <a href="#" class="black_btn NFTdApp">Connect dApp </a>
+        <a href="/casestudies" class="black_text_btn">Explore case studies -></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq_area">
+    <div class="container">
+      <div class="section_title text-center">
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="accordion" id="accordionFAQ">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="head1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+              aria-expanded="true" aria-controls="collapse1">
+              When did the NFT bridge launch?
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="head1"
+            data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              In July 2021, we developed the first testnet bridge between
+              Elrond and HECO was developed. In August 2021, we
+              transformed it into a multichain bridge, followed by several
+              testnets: Ethereum Ropsten, BSC, Polygon Mumbai, Harmony,
+              and Celo. Finally, in October 2021, we launched the bridge
+              mainnet, connecting Ethereum, BSC, Polygon, Elrond, and
+              Fantom. In November, we added Tron, Avalanche, and xDai; in
+              December, Algorand and Fuse; and in January 2021, Velas and
+              Tezos were joined. The latest additions, as of February
+              2022, are IoTeX and Harmony.
+              <br />
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              Why does the industry need a multichain NFT bridge?
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+            data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              In 2021, interest in NFTs exploded: their sales grew from
+              thousands of USD to hundreds of millions of USD per month.
+              NFTs also expanded from Ethereum to other chains: BSC,
+              Solana, Fantom, Avalanche, etc. However, NFT ecosystems on
+              different blockchains remain insular and isolated. They
+              can’t exchange assets or liquidity.
+              <br />
+              <br />
+              While there are lots of fungible token bridges (which are
+              straightforward to build), there are very few NFT bridging
+              solutions - and those that do exist connect only EVM chains
+              (such as Ethereum and Polygon), or at most one non-EVM
+              network (such as Solana or Elrond) to an EVM one. XP.NETWORK
+              fills this gap, connecting all the isolated ecosystems (both
+              EVM and non-EVM into a global network of interoperable
+              markets.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              Do you need to be able to code to use the bridge?
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+            data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              XP.NETWORK has two target groups of users:<br />
+              <div style="padding-left: 30px">
+                1) Those who don’t code: NFT product owners, traders,
+                investors, collectors, and artists/creators. They can use
+                the simple and friendly interface at
+                <a href="https://bridge.xp.network" target="_blank">https://bridge.xp.network.</a>
+                <br />
+                2) Developers: they can use the bridge JavaScript library
+                at
+                <a href="https://www.npmjs.com/package/xp.network" target="_blank" style="word-break: break-all;">
+                  https://www.npmjs.com/package/xp.network.</a>
+                <br />The <strong>REST API</strong> service allows
+                developers working with Python, Java, C#, C++, or any
+                other programming language to use the bridge by calling
+                POST requests with the function call parameters stored in
+                the body of the requests. The service returns valid but
+                unsigned transactions that users can sign and submit via
+                third-party dApps.
+              </div>
+
+              <br />
+              What are the main use cases? <br />
+              <br />
+
+              1. <strong>Cross-chain games:</strong> teams of players
+              spread across the blockchains can collect NFT-based
+              artifacts or mine resources and send them from one network
+              to another. <br />
+
+              2. <strong>Cross-chain marketplaces:</strong> platforms can
+              save thousands of dollars and developer-hours by using our
+              library to allow the users to buy NFTs issued on other
+              chains and pay in a currency of their choice. <br />
+
+              3. <strong>NFT projects</strong> wishing to gain global
+              presence and maximize sales volume and liquidity.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              How many chains does the NFT bridge connect?
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+            data-bs-parent="#accordionFAQ">
+            <div class="accordion-body listing">
+              The bridge already connects 10 EVM and 4 non-EVM
+              networks.<br />
+              EVM:<br /><br />
+
+              <span>1.</span>Ethereum<br />
+              <span>2.</span>Binance Smart Chain<br />
+              <span>3.</span>Polygon<br />
+              <span>4.</span>Avalanche<br />
+              <span>5.</span>Fantom<br />
+              <span>6.</span>Velas<br />
+              <span>7.</span>xDai<br />
+              <span>8.</span>Fuse<br />
+              <span>9.</span>Harmony<br />
+              <span>10.</span>IoTeX<br /><br />
+
+              Non-EVM:<br /><br />
+
+              <span>1.</span>Elrond<br />
+              <span>2.</span>Algorand<br />
+              <span>3.</span>Tezos<br />
+              <span>4.</span>Tron<br /><br />
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              What is the difference between EVM and Non-EVM chains?
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+            data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              EVM stands for Ethereum Virtual Machine - a major invention
+              that differentiates Ethereum from Bitcoin. EVM allows
+              developers to add and run third-party code on a live
+              blockchain without stopping it. It uses Solidity, the first
+              smart contract language.<br /><br />
+
+              All the chains that have adopted EVM support Solidity, the
+              MetaMask wallet, Web3 tools, Ethereum’s JavaScript
+              libraries, etc. The infrastructure built for one such chain
+              can be reused on all the others with minimal changes, and
+              their token standards are very similar.<br /><br />
+
+              Non-EVM blockchains use their own virtual machines, token
+              standards, and smart contract language, such as Rust, C++,
+              TEAL, Michelson, !Ink, Plutus, etc. Such chains can have
+              technical advantages over EVM networks, but few developers
+              know the necessary languages, so building a non-EVM chain is
+              very hard work. <br /><br />
+
+              Because of the complexity involved, there are very few
+              non-EVM NFT bridges. That’s why the creation of such a
+              bridge is a big event for the industry. XP.NETWORK is
+              currently the only NFT bridge for Elrond, Tezos, and
+              Algorand.<br />
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+              What’s the current development stage?
+            </button>
+          </h2>
+          <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+            data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              We're currently scaling the bridge relay validator network
+              and working on minimizing target chain transaction fees.
+              We've introduced and audited support for ERC-1155 smart
+              contracts, custom collection names on target chains, and -
+              for the first time in the history of the industry -
+              transferring NFTs while retaining the logic of the original
+              smart contracts.<br /><br />
+
+              In 2022, we plan to integrate several more important
+              ecosystems, including Solana, EOS, NEAR, Cardano, and
+              Cosmos.<br />
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading7">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+              When will the bridge validators become decentralized?
+            </button>
+          </h2>
+          <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+            data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              Right now we’re building at breakneck speed; if the
+              validators were already decentralized, they’d have to run
+              upgrades every couple of days to catch up with the code
+              updates. This is impractical and unsafe, since the team
+              would have no guaranteed way to inform all the anonymous
+              validators that they have to install an update - or to make
+              sure they all do it.<br /><br />
+
+              Once the development pace slows down a bit, we will
+              outsource bridge validation to third parties, incentivizing
+              community members and industry influencers to further secure
+              the bridge by decentralizing it.<br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer_area" id="footer">
+    <div class="footer_top">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="footer_widget foot_contact">
+              <a href="/" class="foot_logo"><img src="../assets/img/logo_2.svg" alt="Logo" /></a>
+              <ul class="widget_link desktop_only">
+                <li>
+                  <a href="tel:+1 (650) 924-9214">+1 (650) 924-9214</a>
+                </li>
+                <li>
+                  <a href="mailto:contact@xp.network">contact@xp.network</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer_widget">
+              <h5>Products</h5>
+              <ul class="widget_link">
+                <li><a href="#">Cross-Chain NFT Bridge</a></li>
+                <li><a href="#">XPJS API</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer_widget">
+              <h5>Resources</h5>
+              <ul class="widget_link">
+                <li><a href="#">Whitepaper</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Roadmap</a></li>
+                <li>
+                  <a href="#">GitHub
+                    <span class="gitLate">
+                      <span class="wave"></span> Latest Jan 17,2022</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer_widget">
+              <h5>XP.NETWORK</h5>
+              <ul class="widget_link">
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Brand assets</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="footer_widget">
+              <h5>Community</h5>
+              <ul class="widget_link">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">Reddit</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Discord</a></li>
+                <li><a href="#">Bitclout</a></li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col mobileOnly footContact">
+            <div class="footer_widget foot_contact">
+              <ul class="widget_link">
+                <li>
+                  <a href="tel:+1 (650) 924-9214">+1 (650) 924-9214</a>
+                </li>
+                <li>
+                  <a href="mailto:contact@xp.network">contact@xp.network</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="foot_links">
+          <p>A blockchain-agnostic network for building NFT dApps</p>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of use</a></li>
+          </ul>
+        </div>
+        <div class="copyRight">
+          © 2021 XP.NETWORK Ltd. All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <!-- /.bodyWrap -->
+
+  <!-- Js -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/owl.carousel.min.js"></script>
+  <script src="../assets/js/active.js"></script>
+  <script src="../assets/js/parts.js"></script>
+</body>
+
+</html>

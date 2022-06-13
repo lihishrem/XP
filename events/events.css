@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,100;1,200&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,100;0,500;1,100;1,200&family=Shadows+Into+Light&display=swap');
+
+.container {
+    max-width: 1024px;
+}
+
+.WraperBlack{
+    background-image: url("/assets/img/events/events banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100vw;
+    height: 500px;
+    top: 0px;
+    position: relative;
+    
+}
+
+.wraper{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1024px; 
+}
+
+.centerDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.padding{
+    padding: 5%;
+}
+
+.title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.aboutBtn{
+    width: max-content;
+    height: 17px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 119%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #E22440;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    background: none;
+    margin-bottom: 20px;
+}
+
+
+.connectBtn{
+    margin-top: 20px;
+    width: 205px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #1D1D21;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.connectBtn:hover{
+    color: #1D1D21;
+    background: #FFFFFF;
+    opacity: 0.7;
+}
+
+.content{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 180%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-top: 2%;
+    width: 467px;
+}
+
+.joinUsDivMobile{
+    visibility: hidden; 
+}
+
+.wraperBody{
+    margin: 0 auto;
+    max-width: 1024px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    
+}
+
+.titleBody{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 120%;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    color: #0E1220;
+
+}
+
+.imgSize{
+    height: 119px;
+    width: 119px;
+    margin: 20px;
+
+}
+
+.conferenceInfoBox{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 60px 32px 36px 40px;
+    gap: 24px;
+    width: 403px;
+    height: 524px;
+    background: #FFFFFF;
+    border: 1px solid #EBECEF;
+    border-radius: 20px;
+}
+
+.amaBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 40px;
+    gap: 40px;
+    width: 1000px;
+    height: 400px;
+    background: #1B1B1D;;
+    border-radius: 20px;
+  }
+
+.infoEpisode{
+    width: 450px;
+    height: inherit;
+    gap: 0px;
+    padding: 30px;
+    /* padding-left: 20px; */
+    padding-right: 0px;
+}
+
+.conferenceInfoImg{
+    width: 573px;
+    height: 524px;
+    border-radius: 20px;
+}
+
+.watchNowbtn{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #FFFFFF;
+    
+}
+
+.contentBody{
+    margin-top: 2%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 180%;
+    text-align: center;
+    color: #0E1220;
+    opacity: 0.9;
+    align-items: center;
+}
+
+
+.box{
+    padding: 32px 32px 24px;
+    width: 488px;
+    height: 407px;
+    background: #FFFFFF;
+    border: 1px solid #EBECEF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.alignLeft{
+    text-align: left;
+}
+
+.marginButtom{
+    margin-bottom: 5px;
+}
+
+.marginLeft{
+    margin-left: 25px;
+}
+
+.logoBox{
+    width: 110px;
+    height: 100px;
+    padding: 10px;
+    margin: 1%;
+}
+
+.boxTitle{
+    width: 424px;
+    height: 29px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    /* margin: 2%; */
+    margin-left: 0px;
+}
+
+.btnMore{
+    margin-top: 15%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    display: flex;
+    text-align: right;
+    color: #282829;
+    background: none;
+    border: none;
+    margin-left: 80%;
+    width: max-content;
+    text-decoration: none;
+}
+
+.btnMore:hover{
+    color: #e22440;
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+
+.boxes{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 20px 20px;
+}
+
+.btn{
+    border: none;
+    background: none;
+    text-decoration: none;
+    align-self: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    padding: 2%;
+
+}
+
+.btn:focus { outline: none !important; box-shadow: none !important; }
+
+.btn:hover{
+    color: #e22440;
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+
+.marginTop{
+    margin-top: 30px;
+}
+
+.img{
+    width: 90;
+}
+
+.redLabel{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    text-transform: uppercase;
+    color: #E22440;
+}
+
+.blackLabel{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    /* text-transform: uppercase; */
+    color: #0E1220;
+}
+.greyLabel{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.1485px;
+    line-height: 26px;  
+    color: #E1E1E9;
+}
+
+.whiteLabel{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    /* text-transform: uppercase; */
+    color: #FFFFFF;;
+}
+
+.whiteLabelBig{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 120%;
+    display: flex;
+    align-items: flex-end;
+    color: #FFFFFF;
+}
+
+.whiteLabelBigNames{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 120%;
+    display: flex;
+    align-items: flex-end;
+    color: #FFFFFF;
+}
+
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-between;
+    gap: 20px;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.featuredVideoImg{
+    width: 488px;
+    height: 368px;
+    border-radius: 25px;
+}
+
+.featuredVideoImg:hover{
+    transition: all 0.5s ease;
+    height: calc(100% + 3px) !important;
+    /* filter: blur(81.909px); */
+    backdrop-filter: blur(34.4018px);
+    opacity: 0.8;
+}
+
+
+.achievementBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px;
+    gap: 5px;
+    width: 237.75px;
+    height: 122px;
+    background: #FFFFFF;
+    border: 1px solid #EBECEF;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.achievementContent{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    margin-top: 10px;
+}
+
+.timelineDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 1000px;
+    align-items: center;
+}
+
+.yearLabel{ 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    margin: 5px;
+    width: max-content;
+}
+
+.years{
+    margin-left: 10px;
+}
+
+.greyTitle{
+    color: #0E1220;
+    opacity: 0.6;
+    background-color: none;
+    border: none;
+    background: none;
+    align-self: center;
+    padding: 10px 20px 10px 20px;
+    width: max-content;
+    height: max-content;
+
+}
+
+.chosenYear{
+    color: #FFFFFF;
+    background-color: #1E2129;
+    border: 1px solid #EBECEF;
+    border-radius: 50px;
+    opacity: 1;
+    padding: 10px 20px 10px 20px;
+    width: max-content;
+    height: max-content;
+}
+
+.paddingBox{
+    height: 464px;
+    padding: 32px 10px 10px 32px;
+}
+
+.paddingBox2021{
+    height: 500px;
+    padding: 32px 10px 10px 32px;
+}
+
+.smallpaddingBox2021{
+    height: 292px;
+}
+
+.boxHeight{
+    height: 257px;
+    margin-left: 20px;
+}
+
+.boxHeight2{
+    height: 183px;
+    margin-left: 20px;
+}
+
+.spaceBetween{
+    justify-content: space-between;
+}
+
+.mobile-Only{
+    display: none;
+}
+
+.desk-Only{
+    visibility: visible;
+}
+
+.timelineLogo{
+    width: 20%;
+    height: auto;
+    margin: 5px;
+    align-self: center;
+}
+
+
+.timeLineRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.check{
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+.plus{
+    display: flex;
+    align-items: center;
+    color: rgb(28, 30, 36);
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 5px;
+    margin-top: -4px;
+}
+
+.TitelWidth{
+    width: 420px;
+}
+
+.amaFuseImg{
+    height: 400px; 
+    /* border-radius:25px ; */
+}
+
+.fuseMob{
+    gap: 0px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .mobColumn{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexRow {
+        justify-content: center;
+        align-self: flex-start;
+    }
+    .flexColumn{
+        /* justify-content: left;
+        align-content: flex-start; */
+    }
+
+    .WraperBlack{
+        background-image: url("/assets/img/events/mobile/banner.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    .centerDiv{
+        width: 100%;
+        left: 0;
+        flex-direction: column; 
+        padding: 5%;
+    }
+    .connectBtn{
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    .title{
+        width: max-content;
+        align-self: center;
+        font-size: 28px;
+        height: 0px;
+    }
+
+    .content{
+        display: flex;
+        margin-top: 70px;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    .aboutBtn{
+        margin-top: 20px;
+    }
+    .titleBody{
+        padding: 0px;
+        align-self: center;
+        text-align: center;
+    }
+    
+    .content{
+        width: 100%;
+    }
+    .displayNoneMob{
+        display: none;
+    }
+    
+    .teamMobileRow{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .mobile-Only{
+        display: block;
+    }
+    .desk-Only{
+        display: none;
+    }
+    .btnMore{
+        margin-left: 60%;
+    }
+   
+    .marginTop{
+        margin-top: 15px;
+    }
+   
+    .marginTopMob{
+        margin-top: 0px;
+    }
+    .amaBox{
+        height: auto;
+        width: 90vw;
+        flex-direction: column;
+        padding: 0px;
+        gap: 0px;
+        justify-items: left;
+        justify-content: left;
+
+    }
+    .whiteLabelBigNames{
+        font-size: 22px;
+    }
+    .imgSize{
+        width: 70px;
+        height: 70px;
+        margin: 5px;
+        margin-right: 20px;
+    }
+    
+    .greyLabel{
+        font-size: 16px;
+    }
+    .amaFuseImg{
+        height: 295px; 
+        margin: 0 auto;
+        width: 100%;
+        left: 0px;
+        /* border-radius:25px ; */
+        padding: 0px 0px;
+        margin-bottom: 0px;
+    }
+
+    .paddingMob{
+        padding: 20px;
+    }
+    .featuredVideoImg{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 10px;
+    }    
+    .conferenceInfoBox{
+        width: 100%;
+        height: auto;
+    }
+    .conferenceInfoImg{
+        width: 100%;
+        height: auto;
+    }
+
+    .conferenceInfoImgMobile{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .alignLeftMob{
+        align-self: flex-start;
+        padding: 20px;
+    }
+    .infoEpisode{
+        width: auto;
+        height: auto;
+        gap: 20px;
+        padding: 30px;
+        /* padding-left: 20px; */
+        padding-right: 0px;
+    }
+    .fuseMob{
+        flex-direction: column;
+        gap: 10px 0px;
+        align-items: flex-start;
+
+    }
+
+}

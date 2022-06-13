@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,100;1,200&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,100;0,500;1,100;1,200&family=Shadows+Into+Light&display=swap');
+
+.vector{
+    position: relative;
+    left: 27.9%;
+    right: 54.53%;
+    top: 66.32%;
+    bottom: -139.85%;
+}
+
+.container {
+    max-width: 1024px;
+}
+
+.WraperBlack{
+    background-image: url("/assets/img/aboutUs/about\ us\ banner.svg");
+    /* background-color: #282829; */
+    width: 100;
+}
+
+.wraper{
+    margin: 0 auto;
+    max-width: 1024px; 
+}
+
+.centerDiv{
+    /* padding: 5%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.padding{
+    padding: 5%;
+}
+
+.title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.aboutBtn{
+    width: max-content;
+    height: 17px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 119%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #E22440;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    background: none;
+    margin-bottom: 20px;
+}
+
+
+.connectBtn{
+    margin-top: 20px;
+    width: 188px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #1D1D21;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.connectBtn:hover{
+    color: #1D1D21;
+    background: #FFFFFF;
+    opacity: 0.7;
+}
+
+.content{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 180%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-top: 2%;
+    width: 467px;
+}
+
+.joinUsDivMobile{
+    visibility: hidden; 
+}
+
+.wraperBody{
+    margin: 0 auto;
+    max-width: 1024px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    
+}
+
+.titleBody{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 120%;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    color: #0E1220;
+
+}
+
+.contentBody{
+    margin-top: 2%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 180%;
+    text-align: center;
+    color: #0E1220;
+    opacity: 0.9;
+    align-items: center;
+}
+
+
+.box{
+    padding: 32px 32px 24px;
+    width: 500px;
+    height: 407px;
+    background: #FFFFFF;
+    border: 1px solid #EBECEF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.alignLeft{
+    text-align: left;
+}
+
+.marginButtom{
+    margin-bottom: 5px;
+}
+
+.marginLeft{
+    margin-left: 25px;
+}
+
+.logoBox{
+    width: 110px;
+    height: 100px;
+    padding: 10px;
+    margin: 1%;
+}
+
+.boxTitle{
+    width: 424px;
+    height: 29px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    /* margin: 2%; */
+    margin-left: 0px;
+}
+
+.btnMore{
+    margin-top: 15%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    display: flex;
+    text-align: right;
+    color: #282829;
+    background: none;
+    border: none;
+    margin-left: 80%;
+    width: max-content;
+    text-decoration: none;
+}
+
+.btnMore:hover{
+    color: #e22440;
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+
+.boxes{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 20px 20px; */
+}
+
+.btn{
+    border: none;
+    background: none;
+    text-decoration: none;
+    align-self: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    padding: 2%;
+
+}
+
+.btn:focus { outline: none !important; box-shadow: none !important; }
+
+.btn:hover{
+    color: #e22440;
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+
+.marginTop{
+    margin-top: 30px;
+}
+
+.img{
+    width: 90;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .yearLabel{
+    width: 43px;
+    height: 22px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #0E1220;
+
+} */
+
+.div2022{
+    padding: 32px 10px 10px 32px;
+    gap: 24px;
+
+    width: 488px;
+    height: 550px;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.backers {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.achievementBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px;
+    gap: 5px;
+    width: 237.75px;
+    height: 122px;
+    background: #FFFFFF;
+    border: 1px solid #EBECEF;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.achievementContent{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    margin-top: 10px;
+}
+
+.timelineDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 1000px;
+    align-items: center;
+}
+
+.yearLabel{ 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    margin: 5px;
+    width: max-content;
+}
+
+.years{
+    margin-left: 10px;
+}
+
+.greyTitle{
+    color: #0E1220;
+    opacity: 0.6;
+    background-color: none;
+    border: none;
+    background: none;
+    align-self: center;
+    padding: 10px 20px 10px 20px;
+    width: max-content;
+    height: max-content;
+
+}
+
+.chosenYear{
+    color: #FFFFFF;
+    background-color: #1E2129;
+    border: 1px solid #EBECEF;
+    border-radius: 50px;
+    opacity: 1;
+    padding: 10px 20px 10px 20px;
+    width: max-content;
+    height: max-content;
+}
+
+.paddingBox{
+    height: 464px;
+    padding: 32px 10px 10px 32px;
+}
+
+.paddingBox2021{
+    height: 500px;
+    padding: 32px 10px 10px 32px;
+}
+
+.smallpaddingBox2021{
+    height: 292px;
+}
+
+.boxHeight{
+    height: 257px;
+    margin-left: 20px;
+}
+
+.boxHeight2{
+    height: 183px;
+    margin-left: 20px;
+}
+
+.spaceBetween{
+    justify-content: space-between;
+}
+
+.mobile-Only{
+    display: none;
+}
+
+.desk-Only{
+    visibility: visible;
+}
+
+.timelineLogo{
+    width: 20%;
+    height: auto;
+    margin: 5px;
+    align-self: center;
+}
+
+.weAreHere{
+    width: 140px;
+    height: max-content;
+    padding: 2px 10px;
+    background: linear-gradient(104.41deg, #04ABAB 39.78%, #3E64ED 118.05%);
+    border-radius: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    
+
+}
+
+.mobMargin{
+    margin-left: 10px;
+}
+
+.imgWide{
+    width: 439px;
+    height: 257px;   
+    margin: 10px; 
+    margin-top: 0px;
+}
+
+.imgNarrow{
+    width: 257px;
+    height: 257px;
+    margin: 10px;
+    margin-top: 0px;
+
+}
+
+.timeLineRow{
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.check{
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+.plus{
+ 
+    display: flex;
+    align-items: center;
+    color: rgb(28, 30, 36);
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 5px;
+    /* margin-left: 10px; */
+    margin-top: -4px;
+}
+
+.TitelWidth{
+    width: 420px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .flexRow {
+        justify-content: center;
+    }
+
+    .WraperBlack{
+        background-image: url("/assets/img/aboutUs/about\ us\ banner\ mob.svg");
+    }
+    .centerDiv{
+        width: 100%;
+        /* height: 350px; */
+        left: 0;
+        flex-direction: column; 
+        padding: 5%;
+    }
+    .connectBtn{
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    /* .wraperBody{
+        width: 100%;
+    } */
+
+    .title{
+        width: max-content;
+        align-self: center;
+        font-size: 28px;
+        height: 0px;
+    }
+
+    .content{
+        display: flex;
+        margin-top: 70px;
+        flex-wrap: wrap;
+        width: 100vw;
+        
+    }
+
+    .aboutBtn{
+        margin-top: 20px;
+    }
+    .titleBody{
+        padding: 0px;
+        align-self: center;
+        text-align: center;
+    }
+    .box{
+        padding: 32px 32px 24px;
+        width: 90%;
+        height: max-content;
+        background: #FFFFFF;
+        border: 1px solid #EBECEF;
+        border-radius: 20px;
+        align-self: center;
+    }
+    .boxes{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        /* padding: 0px;
+        margin: 0px; */
+       
+    }
+    .imgMobileTeam1{
+        width: 233.31px;
+        height: 136.59px;
+    }
+    .imgMobileTeam2{
+        content: url("/assets/img/aboutUs/img2Mob.png");
+    }
+    .content{
+        width: 100%;
+    }
+    .displayNoneMob{
+        display: none;
+    }
+    .grantsMobile{
+        content: url("/assets/img/aboutUs/grantsMob.png");
+    }
+    .teamMobileRow{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .mobile-Only{
+        display: block;
+    }
+    .desk-Only{
+        display: none;
+    }
+    .btnMore{
+        margin-left: 60%;
+    }
+    .weDoneMobile{
+        display: flex;
+        flex-direction: column;
+    }
+    .achievementBox{
+        width: 90vw;
+        height: auto;
+        margin-top: 0px;
+    }
+    .timelineDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: inherit;
+        text-align: center;
+    }
+    .yearLabel{
+        margin: 0px;
+        margin-bottom: 20px;
+        align-self: center;
+        font-size: 28px;
+    }
+    .years{
+        margin: 0px;
+    }
+    .greyTitle{
+        margin:20px;
+        font-size: 18px;
+    }
+    .chosenYear{
+        font-size: 18px;
+    }
+    .timelineMob{
+        flex-direction: column;
+    }
+    .boxTimelineMob{
+        width: 90vw;
+        height: max-content;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+    .logosWidth{
+        display: flex;
+        justify-content: center;
+    }
+    .mobMargin{
+        margin-left: 15px;
+    }
+    .timelineLogo{
+        width: 25%;
+        align-self: center;
+    }
+    .marginTop{
+        margin-top: 15px;
+    }
+    .paddingBox{
+        padding: 32px 24px 10px;
+    }
+    .marginTopMob{
+        margin-top: 0px;
+    }
+    .img1{
+        width: 213px;
+        height: 123px;   
+        margin: 5px; 
+        margin-top: 0px;
+    }
+    .img2{
+        width: 125px;
+        height: 123px;
+        margin: 5px;
+        margin-top: 0px;
+    }
+    .img3{
+        width: 169px;
+        height: 124px;   
+        margin: 5px; 
+        margin-top: 0px;
+    }
+    .checkMobile{
+        align-self: flex-start;
+        margin-top: 5px;
+    }
+    .TitelWidth{
+        width: 100%;
+    }
+    .weAreHere{
+        width: 250px;;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+   /* .img3 {
+        transform: scale(.85)
+    }
+
+    .img1 {
+        transform: scale(.85)
+    }
+
+    .img2 {
+        width: ;
+    }*/
+
+    .img3 {
+        width: calc(169px - 3%);
+        height: auto;
+    }
+
+    .img2 {
+        width: calc(125px - 3%);
+        height: auto;
+    }
+
+    .img1 {
+        width: calc(213px - 3%);
+        height: auto;
+    }
+}

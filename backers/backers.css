@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,100;1,200&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,100;0,500;1,100;1,200&family=Shadows+Into+Light&display=swap');
+
+
+.WraperBlackBackers{
+    background-color: #282829;
+    width: 100;
+}
+
+.wraper{
+    margin: 0 auto;
+    max-width: 1024px; 
+    background-color: #282829; 
+}
+
+.backersDiv{
+    display: flex;
+    align-items: center;
+    width: 2560px;
+    height: 490px;
+    overflow: hidden;
+    padding-left: 15px;
+}
+
+.backersTitle{
+    width: 726px;
+    height: 78px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.titleAndText{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.joinUsDiv{
+    width: 554px;
+    height: 70px;
+    top: -10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #FFFFFF;
+    line-height: 180%;
+    opacity: 80%;
+}
+
+.joinUsDivMobile{
+    visibility: hidden; 
+}
+
+.rec1{
+    position:absolute;
+    width: 263px;
+    height: 665px;
+    left: 0px;
+    top: -200px;
+    background: linear-gradient(180deg, #E22440 0%, rgba(226, 36, 64, 0) 100%);
+    border-radius: 20px;
+}
+
+.rec2{
+    position:absolute;
+    width: 262px;
+    height: 549px;
+    left: -130px;
+    top: -80px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(24px);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(24px);
+}
+
+.rec3{
+    position:absolute;
+    width: 263px;
+    height: 289px;
+    left: -270px;
+    top: 90px;
+    background: rgba(226, 36, 64, 0.6);
+    backdrop-filter: blur(34px);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(34px);
+}
+
+.rectanglesDiv{
+    position:relative;
+}
+
+.wraperLogos{
+    margin: 0 auto;
+    max-width: 1024px; 
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    /* justify-content: center; */
+}
+
+.logo{
+    padding: 0px;
+    align-self: stretch;
+}
+
+.divLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 200px;
+    height: 74px;
+}
+
+.lastBackers{
+    display: flex;
+    justify-content: flex-start;
+}
+@media only screen and (max-width: 768px) {
+    .backersDiv{
+        width: 100%;
+        height: 350px;
+        left: 0;
+        flex-direction: column; 
+        padding: 0px;
+    }
+
+    .backersTitle{
+        width: max-content;
+        align-self: center;
+        font-size: 28px;
+        height: 0px;
+        margin-top: 15px;
+        
+    }
+
+    .joinUsDiv{
+        visibility: hidden; 
+    }
+
+    .joinUsDivMobile{
+        visibility: visible;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        color: #FFFFFF;
+        opacity: 80%;
+        align-self: center;
+        text-align: center;
+    }
+
+    .rec1{
+        position: absolute;
+        width: 162px;
+        height: 336px;
+        right: 0px;
+        top: 0px;
+    }
+
+    .rec2{
+        position: absolute;
+        width: 162px;
+        height: 296px;
+        left: -60px;
+        top: 60px;
+    }
+
+    .rec3{
+        position: absolute;
+        width: 162px;
+        height: 179px;
+        left: -140px;
+        top: 110px;
+    }
+
+    .rectanglesDiv{
+        margin-top: 25px;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .divLogo{
+        width: 50%;
+        padding: 0px;
+        padding-left: 15px;
+        margin-top: 10px;
+    }
+    .logo{
+        width: 130%;
+        height: 130%;
+        padding: 0px;
+        align-self: auto;
+    }
+}
