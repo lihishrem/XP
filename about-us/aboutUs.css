@@ -22,6 +22,7 @@
 .wraper{
     margin: 0 auto;
     max-width: 1024px; 
+    padding-top: 60px;
 }
 
 .centerDiv{
@@ -254,6 +255,10 @@
     margin-top: 30px;
 }
 
+.marginTopGap{
+    margin-top: 25px;
+}
+
 .img{
     width: 90;
 }
@@ -374,7 +379,7 @@
 }
 
 .paddingBox2021{
-    height: 500px;
+    height: 520px;
     padding: 32px 10px 10px 32px;
 }
 

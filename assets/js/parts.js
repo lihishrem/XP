@@ -8,6 +8,53 @@ window.NEWS_EMAIL = "";
 
 const customScripts = document.createElement("script");
 customScripts.type = "text/javascript";
+const customScripts1 = document.createElement("script");
+customScripts1.type = "text/javascript";
+
+const emailOptinModal = (link) => `
+  <style>
+    .optInOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.4;
+      z-index: 1000;
+    }
+
+    .optInModal {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(100%, -100%);
+      
+    }
+  </style>
+
+  <div class="optInOverlay"></div>
+
+
+  <div class="optInModal">
+      <iframe src="${link}"  width="300" height="300"/>
+  </div>
+`;
+
+customScripts1.innerHTML = `
+function onCaptchaEvents(token) {
+  console.log("im hereeeee");
+  fetch('https://xpnetwork-staging.herokuapp.com/subscriber', {
+    method: 'post',
+    headers: window.DEFAULT_HEADERS,
+    body: JSON.stringify({
+      email: window.NEWS_EMAIL,
+      token
+    })
+  }).then(res => {
+    $('#newsLetterBtnEvents').siblings('input').remove();
+    $('#newsLetterBtnEvents').remove();
+  })
+}`;
 
 customScripts.innerHTML = `
 
@@ -21,17 +68,29 @@ function onCaptcha(token) {
       email: window.NEWS_EMAIL,
       token
     })
-  }).then(res => {
+  }).then(async res => {
     $('#newsLetterBtn').siblings('input').remove();
     $('#newsLetterBtn').remove();
 
     $('.newsLetterWrapper .quick_links h4').text("Thanks for signing up!");
     $('.newsLetterWrapper .quick_links p').text("Stay tuned for future updates.");
+
+    $('#subscribeDiv').remove();
+    $('#subscribeSuccess').css("display", "inline-flex");
+
+    const data = await res.json();
+
+    data.link && window.open(
+      data.link,
+      "newsLetter",
+      "width=500,height=500"
+    );
   })
 }
 `;
 
 document.head.appendChild(customScripts);
+document.head.appendChild(customScripts1);
 
 const script = document.createElement("script");
 script.type = "text/javascript";
@@ -137,6 +196,7 @@ const footer = `
         <h5>Products</h5>
         <ul class="widget_link">
           <li><a href="https://bridge.xp.network/" target="_blank" rel="noopener noreferrer">Cross-Chain NFT Bridge</a></li>
+          <li><a href="https://widget.xp.network/" target="_blank" rel="noopener noreferrer">Bridge Widget</a></li>
           <li><a href="/api">XPJS API</a></li>
           <!-- <li><a href="https://bridge-explorer.xp.network/" target="_blank" >Explorer</a></li> --!>
         </ul>
@@ -227,10 +287,10 @@ const footer = `
 </div>
 <div class="footer_bottom">
 <div class="container">
-  <div class="foot_links">
-    <p>A blockchain-agnostic network for building NFT dApps</p>
+   <div class="foot_links">
+   <!-- <p>A blockchain-agnostic network for building NFT dApps</p>--!>
 
-  </div>
+  </div> 
   <div class="copyRight">
     © 2022 XP.NETWORK Ltd. All Rights Reserved
   </div>
@@ -243,12 +303,14 @@ const header = `
 <nav class="nare_area">
   <div class="nav_brand">
     <a href="/"
-      ><img src="/assets/img/${
-        (window.location.pathname.includes("/team") ||
-          window.location.pathname.includes("about-us") ||
-          window.location.pathname === "/" ||
-          window.location.pathname.includes("backers")) &&
-        !document.body.classList.contains("active_menu")
+      ><img class="xpLogoMain" src="/assets/img/${
+        document.body.classList.contains("scroll-up")
+          ? "logo.svg"
+          : (window.location.pathname.includes("/team") ||
+              window.location.pathname.includes("about-us") ||
+              window.location.pathname === "/" ||
+              window.location.pathname.includes("backers")) &&
+            !document.body.classList.contains("active_menu")
           ? "logo-white.svg"
           : "logo.svg"
       }" alt="XP-NETWORK"
@@ -390,7 +452,46 @@ const header = `
     <span class="navTriger"></span>
   </div>
 </nav>
-</div>
+</div>    
+
+<script>
+      const body = document.body;
+      let lastScrool = 0;
+      window.addEventListener('scroll', ()=>{
+        const currentScroll = window.pageYOffset;
+
+        if(currentScroll === 0){
+          body.classList.add("navMobile");
+        }
+
+        if(currentScroll > 0){
+          body.classList.remove("navMobile");
+        }
+
+        if(currentScroll<=0){
+          body.classList.remove("scroll-up");
+        }
+
+        if(currentScroll>lastScrool && !body.classList.contains("scroll-down")){
+          body.classList.remove("navMobile");
+          body.classList.add("scroll-down");
+          body.classList.remove("scroll-up");
+          
+          
+        }
+        if(currentScroll<lastScrool && body.classList.contains("scroll-down")){
+          body.classList.remove("navMobile");
+          body.classList.remove("scroll-down");
+          body.classList.add("scroll-up");
+          
+        }
+
+
+        lastScrool = currentScroll;
+      })
+
+    </script>
+
 <script>
 $("span.navTriger").click(function () {
   
@@ -456,13 +557,28 @@ $(document).ready(function () {
       input.addClass("failedEmail");
     }
   });
+  $(document).on("click tap", "#newsLetterBtnEvents", async function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const input = $(this).siblings("input");
+    console.log(input);
+    const email = input.val();
+    if (/\S+@\S+\.\S+/.test(email)) {
+      window.NEWS_EMAIL = email;
+      console.log("im in");
+      grecaptcha.execute();
+    } else {
+      input.addClass("failedEmail");
+    }
+  });
 
   $("#header").html(header);
   console.log("dfsa");
   fetch("../../data.json")
     .then((response) => response.json())
     .then((data) => {
-      const maxSymbols = 80;
+      const maxSymbols = 60;
 
       const getUpdate = (update, i, full) => {
         const string = stripLink(update?.text);
@@ -473,9 +589,10 @@ $(document).ready(function () {
 
         return `
         <div class="topUpdate ${full ? "fullUpdate" : ""}">
-        <a href="${link}" class="learnMore"  target="${
+        <span class="dateUpdate">${update?.date}</span>
+        <!-- <a href="${link}" class="learnMore"  target="${
           update.openInNewTab ? "_blank" : "_self"
-        }">Learn More</a>
+        }">Learn More</a> --!>
         ${
           string?.length >= maxSymbols
             ? `<img src="/assets/img/updates/arrow.svg" alt="arrow" class="expandUpdate mobileOnly"/>`
@@ -484,7 +601,10 @@ $(document).ready(function () {
         <div class='child-container'>
             <div class="top-line">
               <img class="updateBadge" src="/assets/img/updates/badge.png"/>
-              <span>${update?.date}</span>
+              <a href="${link}" target="${
+          update.openInNewTab ? "_blank" : "_self"
+        }"><img src="/assets/img/updates/moreArrow.png" class="more"/></a>
+              <!-- <span>${update?.date}</span> --!>
             </div>
             ${
               full
@@ -497,7 +617,7 @@ $(document).ready(function () {
             <p class='${
               string.length >= maxSymbols ? `cropped crop-${i}` : ""
             }'>${
-                    string.length >= maxSymbols
+                    string.length > maxSymbols
                       ? string.slice(0, maxSymbols) + "..."
                       : string
                   }</p>

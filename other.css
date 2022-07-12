@@ -429,7 +429,7 @@ body {
 }
 
 .test-items.straight {
-  height: 552px;
+  height: 500px;
 }
 
 .yellowBgc {
@@ -986,6 +986,17 @@ section.feature_nft_area {
   transition: all .5s ease;
 }
 
+.dateUpdate{
+  position: absolute;
+  bottom: 5px;
+  color:rgb(230, 221, 221);
+  font-size: 12px;
+}
+
+.topUpdate:hover .more{
+  content: url("/assets/img/updates/arrowHover.png");
+}
+
 .fullUpdate {
   position: absolute;
   width: 100%;
@@ -1082,7 +1093,7 @@ section.feature_nft_area {
 }
 
 .botUpdate .topCard {
-  height: 200px;
+  height: 180px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -1130,6 +1141,7 @@ section.feature_nft_area {
   right: 8px;
   color:rgb(230, 221, 221);
   font-size: 16px;
+  text-decoration: underline;
 }
 
 .learnMore:hover {
@@ -1156,6 +1168,28 @@ section.feature_nft_area {
   background-image: url('/assets/img/streetpunks/desktop/Background.png');
   height: 600px;
   top: 0px;
+}
+
+
+.paviaPage .paviaBg::before {
+  background-image: url('/assets/img/pavia\ case\ study/desktop/Background.png');
+  height: 550px;
+  top: 0px;
+}
+
+
+.apesPage .apesBg::before {
+  background-image: url('/assets/img/Apes\ planet/desk/bg.png');
+  height: 550px;
+  top: 0px;
+}
+
+
+.rocketsPage .rocketsBg::before {
+  background-image: url('/assets/img/RM\ case\ study/desktop/RM background desk.png');
+  height: 550px;
+  top: 0px;
+  background-color: black;
 }
 
 .impsPage .impsBg::before {
@@ -1231,6 +1265,10 @@ section.feature_nft_area {
 .bxocontent_logo {
   display: flex;
   justify-content: space-between;
+}
+
+.updateBadge {
+  width: 99px;
 }
 
 .updateBadge {
@@ -1356,7 +1394,7 @@ input:-webkit-autofill{
 }
 
 @media only screen and (max-width: 766px) {
-
+ 
   img.box_content_img {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
@@ -1594,6 +1632,24 @@ input:-webkit-autofill{
     height: auto;
   }
 
+  .paviaPage .paviaBg::before {
+    background-image: url('/assets/img/pavia\ case\ study/mob/background.png');
+    height: 480px;
+  }
+
+
+  .apesPage .apesBg::before {
+    background-image: url('/assets/img/Apes\ planet/mob/bg mob.png');
+    height: 550px;
+    top: 0px;
+  }
+
+  .rocketsPage .rocketsBg::before {
+    background-image: url('/assets/img/RM\ case\ study/mob/RM background mob.png');
+    height: 500px;
+    top: 0px;
+  }
+  
   .impsPage .impsBg::before {
     background-image: url('/assets/img/IMPs/imps\ bg.png');
     height:auto
@@ -1993,10 +2049,10 @@ input:-webkit-autofill{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 40px;
+  padding: 60px 40px;
   gap: 40px;
   width: 1000px;
-  height: 400px;
+  height: auto;
   background: #282829;
   border-radius: 20px;
 }
@@ -2093,6 +2149,10 @@ input:-webkit-autofill{
 }
 
 @media only screen and (max-width: 768px) {
+  .test-items.straight {
+    height: auto;
+    padding-bottom: 32px;
+  }
   .imgWrapper img {
     position: static;
     margin: auto;

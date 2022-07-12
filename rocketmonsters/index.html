@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="twitter:title" content="Rocket Monsters" />
+  <meta name="twitter:site" content="@xpnetwork_" />
+  <meta name="twitter:description" 
+  content="Rocket Monsters are expanding from Tezos to Harmony thanks to XP.NETWORK's multi-chain NFT bridge" />  
+  <meta name="twitter:image" itemprop="image" content="https://xp.network/assets/img/RM case study/RM meta.png" />
+  <meta property="og:title" content="Rocket Monsters" />
+
+  <meta property="og:image" itemprop="image" content="https://xp.network/assets/img/RM case study/RM meta.png" />
+  <meta name="description" 
+  content="Rocket Monsters are expanding from Tezos to Harmony thanks to XP.NETWORK's multi-chain NFT bridge" />    
+  <meta property="og:description" 
+  content="Rocket Monsters are expanding from Tezos to Harmony thanks to XP.NETWORK's multi-chain NFT bridge" />  
+  
+  <title>XP-NETWORK | Rocket Monsters</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <!-- owl.carousel -->
+  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css" />
+  <!-- Main Css -->
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../other.css" />
+  <!-- Responsive Css -->
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
+
+  <link rel="stylesheet" href="./rocketMonsters.css" />
+</head>
+
+<body class="flate_menu">
+  <div class="bodyWrap theosPage driftersPage thunderLandsPage impsPage rocketsPage">
+    <div class="sidebar_form">
+      <span class="close_form"><img src="/assets/img/icons/close.svg" /></span>
+      <div class="sideForm_container">
+        <div class="form_content">
+          <div class="welcome_cont">
+            <h6>Go multichain today</h6>
+            <p>
+              Contact us to integrate Multichain NFT bridge to your NFT dApp
+            </p>
+          </div>
+          <div class="submit_cont" style="display: none">
+            <h6>Thank you for your request</h6>
+            <p>We will reach you shortly</p>
+          </div>
+        </div>
+        <div class="sideForm">
+          <form action="#" id="sideContact">
+            <div class="inpCol">
+              <!-- /.invalidField    == this class for error message-->
+              <label for="Projectname">Project name</label>
+              <input type="text" name="Projectname" id="Projectname" required />
+              <span class="invalidText">This field is required</span>
+            </div>
+            <div class="inpCol">
+              <label for="Projectwebsite">Project website</label>
+              <input type="text" name="Projectwebsite" id="Projectwebsite" required />
+              <span class="invalidText">This field is required</span>
+            </div>
+            <div class="inpCol">
+              <label for="Contactname">Contact name</label>
+              <input type="text" name="Contactname" id="Contactname" required />
+              <span class="invalidText">This field is required</span>
+            </div>
+            <div class="inpCol">
+              <label for="">Telegram/Email/Discord</label>
+              <input type="text" name="teleg_email_disc" id="teleg_email_disc" required />
+              <span class="invalidText">This field is required</span>
+            </div>
+            <div class="inpCol">
+              <label for="Message">Message</label>
+              <textarea name="Message" id="Message"></textarea>
+              <span class="invalidText">This field is required</span>
+            </div>
+            <div class="inpCol reCaptcha" style="display: none">
+              <img src="assets/img/checkbox.png" />
+            </div>
+            <div class="form_btn">
+              <div id="captcha2" style="transform: scale(0.85); transform-origin: 0 0"></div>
+              <button type="submit" class="whiteBtn" style="color: black">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <header class="site_header" id="header">
+      <div class="container">
+        <nav class="nare_area">
+          <div class="nav_brand">
+            <a href="index.html"><img src="../assets/img/logo.svg" alt="XP-NETWORK" /></a>
+            <a href="#" class="xpnet-balance desktop_only"><img src="../assets/img/xpnet-balance.svg" />
+              <span>$0.01286</span></a>
+          </div>
+          <div class="nav_menu_area">
+            <a href="#" class="xpnet-balance mobileOnly"><img src="../assets/img/xpnet-balance.svg" />
+              <span>$0.01286</span></a>
+            <ul class="main_menu">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Use cases</a>
+              </li>
+              <li class="nav-item mega-menu">
+                <a href="#" class="nav-link">Resources</a>
+                <div class="drop-menu resuouceMega">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="resou_menu_box">
+                        <img src="../assets/img/icons/Docs.svg" class="menu_icon" />
+                        <h6>Docs</h6>
+                        <p>
+                          API documentation, tutorials, and other resources
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="resou_menu_box">
+                        <img src="../assets/img/icons/roadmap.svg" class="menu_icon" />
+                        <h6>Roadmap</h6>
+                        <p>Follow our journey from inception to launch.</p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="resou_menu_box">
+                        <img src="../assets/img/icons/Whitepaper.svg" class="menu_icon" />
+                        <h6>Whitepaper</h6>
+                        <p>
+                          A closer look at the architecture, bridging
+                          algorithm, and security
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="resou_menu_box">
+                        <img src="../assets/img/icons/roadmap.svg" class="menu_icon" />
+                        <h6>
+                          GitHub
+                          <span class="gitLate">
+                            <span class="wave"></span> Latest Jan
+                            17,2022</span>
+                        </h6>
+                        <p>The latest technical updates & code releases</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item mega-menu">
+                <a href="#" class="nav-link">Community</a>
+                <div class="drop-menu communityMegamenu">
+                  <div class="comm_megaIitem">
+                    <img src="../assets/img/xp-commu.svg" />
+                    <h6>XP Community</h6>
+                    <a href="#" class="black_text_btn smalBtn">Learn more -></a>
+                  </div>
+                  <div class="comm_megaIitem">
+                    <img src="../assets/img/xp-stories.svg" />
+                    <h6>XP Stories and news</h6>
+                    <a href="#" class="black_text_btn smalBtn">Learn more -></a>
+                  </div>
+                  <div class="mega_black_box">
+                    <div class="mega_black_img">
+                      <img src="../assets/img/mega_black_img.svg" />
+                    </div>
+                    <div class="mega_black_cont">
+                      <h4>Become an XP.NETWORK Ambassador</h4>
+                      <p>
+                        Lead your local XP.NETWORK community, help us promote
+                        the Bridge, and earn rewards.
+                      </p>
+                      <a href="#" class="grayBtn">Coming soon</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="social-links">
+              <li>
+                <a href="#"><img src="../assets/img/social/telegram.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../assets/img/social/twiter.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../assets/img/social/redit.svg" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile_nav_triger mobileOnly">
+            <span class="navTriger"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="opilous_hero_area rocketsBg">
+      <div class="headerContainer" >
+          <div class="opilous_hero flexRow mainHeader deskOnly">
+            <h2 class="mainTitle" style="padding-top: 40px"> 
+              Rocket Monsters <br/>
+              are the first to expand <br/>
+              from Tezos to Harmony <br/>   
+            </h2>
+          </div>
+          <div class="opilous_hero flexColumn mainHeader mobOnly">
+            <h2 class="mainTitle" style="padding-top: 260px;margin: 0 auto; width: max-content;"> 
+              Rocket Monsters <br/>
+              are the first to expand <br/>
+              from Tezos to Harmony <br/>
+            </h2>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="overviewContainer">
+        <div class="projectOverview">
+          <div class="flexColumn" style="gap:12px">
+            <h5 class="overviewTitle">PROJECT OVERVIEW</h5>
+            <p class="overviewP">
+              Rocket Monsters is a Play and Earn Blockchain game built on Unreal Engine 5. The Rocket Monsters Universe is filled with a variety of characters, weapons, and vehicles which are all playable NFTs.             </p>
+            <a href="https://rocketmonsters.io/" target="_blank" rel="noopener noreferrer" class="overviewLink">rocketmonsters.io</a>
+          </div>
+          
+          <div class="flexColumn" style="gap:20px">
+            <label class="overviewLabel">BLOCKCHAIN</label>
+            <div class="flexRow gap">
+             <img src="/assets/img/RM case study/desktop/Harmony logo.svg" class="logoImg"/>
+            </div>
+           
+          </div>
+          <div class="flexRow gap">
+            
+          </div>
+        </div>
+        <img src="/assets/img/RM case study/desktop/overview.png" class="overviewImg deskOnly" />
+        <img src="/assets/img/RM case study/desktop/overview.png" class="overviewImg mobOnly"/>
+      </section>
+
+      
+
+      
+        <section class="content_container_area case_opulous_contBox">
+          <div class="container">
+            <div class="content_boxes_list" style="padding:0px">
+                <div class="content_text">
+                  <h2 class="titleMargin">About Rocket Monsters</h2>
+                  <p>
+                    Rocket Monsters is a third-person galactic shooter that brings together Play-to-Earn rewards, PvP (player vs. player), and PvE (player vs. environment). However, that’s not what makes the project so special. 
+                  </p>
+                  <p>
+                    First of all, Rocket Monsters runs on Tezos – a fast blockchain launched back in 2018 that is coming back into the spotlight. For years, Tezos was overshadowed by newer chains like Solana and Avalanche, but it’s actually very well suited for NFTs and gaming. 
+                  </p>
+                  <p>
+                    Second of all, Rocket Monsters is built with Unreal Engine 5, the world’s premier toolset for creating computer games. As a result, the project will have high-quality graphics and a realistic, immersive gameplay. 
+                  </p>
+                  <p>
+                    At the core of Rocket Monsters is the Bear Battalion – a collection of 10,000 unique, 1:1 NFTs that look like a mix between bears, demons, and even pirates. Many of them have cool names like Zeren or Lunar Knight. The gameplay will center on battles against enemy bears.                  
+                  </p>
+                </div>
+            </div>
+            <br/>
+
+              <div class="newform_card" style="padding: 0; margin-bottom: -37px;margin-top: -15px;">
+                <img src="/assets/img/RM case study/desktop/image1.png" style="margin-top: 24px;"/>
+              </div>
+              <br/><br/>
+
+              
+              <div class="content_boxes" style="padding-bottom:5px">
+                <div class="content_text">
+                  <h2 class="titleMargin">A new challenge for XP.NETWORK: migrating from Tezos <br class="deskOnly"/> to Harmony</h2>
+                <p>
+                  The Bear Battalion was originally minted on Tezos and traded on the Tezos-based Kalamint marketplace. This blockchain has many advantages for a P2E game: it’s very energy-efficient with a small carbon footprint, plus the cost of minting an NFT is below $0.2. 
+                </p>
+                <p>                  
+                  However, upon much consideration, the team decided that the game’s ecosystem would grow faster if it was housed on an EVM-compatible chain that already hosts some major P2E projects and has a large gaming community. 
+                </p>
+                <p>Harmony was the obvious choice: <br/>
+                  1) it supports EVM (Ethereum Virtual Machine), which in general makes it easier to attract users and projects. <br/>
+                  2) It can process up to 2,000 transactions per second at the cost of less than $0.0001 per transaction;<br/>
+                  3) It’s home to the famous Play-to-Earn game DeFi Kingdoms;<br/>
+                  4) There are several popular NFT marketplaces on Harmony, including NFTKey and Metatrone.<br/>
+                </p>
+                <p>
+                  Once the decision was taken , the next challenge was technical: moving the Bear Battalion from the non-EVM Tezos to the EVM-friendly Harmony. The issue is not as trivial as you may think, as these two blockchains use very different technical stacks. The biggest problem is recreating the logic of the NFT smart contract in a radically different programming environment. 
+                </p>
+                <p>                  
+                  The only solution was the XP.NETWORK NFT bridge. We have the only bridge that was specifically designed for transferring NFTs across any number of networks, both EVM and non-EVM. 
+                </p>
+                </div>
+              </div>
+
+              <br/>
+              <div class="newform_card" style="padding: 0;margin-bottom: -37px;margin-top: -15px;">
+                <img src="/assets/img/RM case study/desktop/image2.png" class="desktop_only" style="border-radius: 20px;">
+                <img src="/assets/img/RM case study/mob/image2.png" class="mobileOnly" style="margin-top: 20px;">
+              </div>
+              <br/><br/>
+
+              <div class="content_boxes" style="padding-bottom:5px">
+                <div class="content_text">
+                <p>
+                  But the most important thing is that our team has the necessary expertise to preserve the smart contract logic when migrating an NFT collection between any two chains. For example, the Rocket Monsters smart contract features royalties: a small percentage of every secondary market sale goes to the project’s treasury. 
+                </p>
+                <p>
+                  Of course, this wasn’t the first time that we helped move an NFT collection to a blockchain with a very different architecture: think of how we migrated Drifters from Ethereum to Elrond, for example. The XP team carefully designed a new smart contract and deployed it to Harmony without any complications.              
+                </p>
+                </div>
+                <br/>
+              </div>
+
+              <section class="divContainer">
+                <div class="redBox" >
+                  <img src="/assets/img/pavia case study/desktop/lightnin.svg"/>
+                  <h2 class="textRedBox">Integrate bridge to your dApp in less than 60 min</h2>
+                  <a href="#" class="whiteBoxBtn NFTdApp font-hover-color">Get in touch</a>
+                </div>
+              </section> 
+
+              <div class="content_boxes" style="padding-top:0px">
+                <div class="content_text" style="margin-top: 24px;">
+                  <h2>
+                    400+ galactic Bears are already available on Harmony
+                  </h2>
+                  <p style="padding-top: 20px;">
+                    As of the time of writing, 424 NFTs from the Bear Battalion collection have arrived on Harmony. They are listed on two marketplaces: NFTkey and Metatrone. The floor price is around $140.
+                    <p>                    
+                      The team behind Rocket Monsters is actively developing the product – the game itself. They’ve just released Multiplayer version 8, so that playing against other users now feels more exciting than ever. The project also keeps adding new characters to its lineup and new features to the battle mode. The roadmap for the next few months also includes a virtual land sale, a Civil War Map, and an in-game marketplace.                   
+                    </p>
+                  </div>
+              </div>
+              <div class="newform_card" style="padding: 0;margin-bottom: -37px;margin-top: -15px;">
+                <img src="/assets/img/RM case study/desktop/image3.png" class="desktop_only" style="border-radius: 20px;">
+                <img src="/assets/img/RM case study/mob/image3.png" class="mobileOnly" style="margin-top: 50px;">
+              </div>
+              <br/><br/>
+              
+              <section>
+                <div class="followUsDiv" style="margin-top: 16px;margin-bottom: 16px;">
+                  Rocket Monsters is definitely a project worth watching, and we are very pleased that the XP.NETWORK NFT bridge has played such a major role in its success. We are currently working with many other Play-to-Earn games and metaverse platforms to expand their NFT collections to new chains, so new partnerships will be announced very soon. Join XP.NETWORK on Twitter and Telegram to find out about the next collaboration!              
+                </div>
+              <section class="join_commu_area" style="padding-top: 36px;">
+                <div class="container">
+                  <ul class="community_links">
+                    <li>
+                      <a href="https://t.me/xp_network" target="_blank" rel="noopener noreferrer"
+                        ><img src="/assets/img/social/telegram.svg" alt="telegram" />
+                        Telegram</a
+                      >
+                    </li>
+                    <li>
+                      <a  href="https://twitter.com/xpnetwork_" target="_blank" rel="noopener noreferrer"
+                        ><img src="/assets/img/social/twiter.svg" alt="Twitter" />
+                        Twitter</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+               
+              </section>
+              </section>
+              
+        
+            </div>
+        </section>
+
+
+        <section class="case_slider_aea usecase_opl_slide">
+          <div class="container">
+            <div class="caseSliderArea">
+              <div class="caseSliderRow row">
+                <div class="caseSlideItem" onclick="window.open('/apes', '_self')">
+                  <a href="/apes" class="reUseCase usecaseHis next-prev-font" onclick="return false;"><img
+                      src="../assets/img/icons/arrow_left-red.svg" />
+                      PREVIOUS CASE STUDY</a>
+                  <img src="/assets/img/Apes planet/desk/logo text.svg" style="width: 155.41px; height: 36.95px" alt="crosspunks"" />
+                  <h2>                  
+                    Apes Planet to migrate its NFT collections...
+                  </h2>
+                </div>
+                <div class="caseSlideItem" onclick="window.open('/opulous', '_self')">
+                  <a href="/opulous" class="reUseCase usecaseHis next-prev-font">NEXT CASE STUDY
+                    <img src="../assets/img/icons/arrow_right-red.svg" /></a>
+                  <img src="../assets/img/home/opulous.svg" alt="austrianpost" />
+                  <h2>
+                    Bringing the power <br/>
+                    back to the artist
+                  </h2>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+      
+    </main>
+
+    <footer class="footer_area" id="footer">
+      <div class="footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="footer_widget foot_contact">
+                <a href="/" class="foot_logo"><img src="../assets/img/logo_2.svg" alt="Logo" /></a>
+                <ul class="widget_link desktop_only">
+                  <li>
+                    <a href="tel:+1 (650) 924-9214">+1 (650) 924-9214</a>
+                  </li>
+                  <li>
+                    <a href="mailto:contact@xp.network">contact@xp.network</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer_widget">
+                <h5>Products</h5>
+                <ul class="widget_link">
+                  <li><a href="#">Cross-Chain NFT Bridge</a></li>
+                  <li><a href="#">XPJS API</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer_widget">
+                <h5>Resources</h5>
+                <ul class="widget_link">
+                  <li><a href="#">Whitepaper</a></li>
+                  <li><a href="#">Docs</a></li>
+                  <li><a href="#">Roadmap</a></li>
+                  <li>
+                    <a href="#">GitHub
+                      <span class="gitLate">
+                        <span class="wave"></span> Latest Jan 17,2022</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer_widget">
+                <h5>XP.NETWORK</h5>
+                <ul class="widget_link">
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Brand assets</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="footer_widget">
+                <h5>Community</h5>
+                <ul class="widget_link">
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Telegram</a></li>
+                  <li><a href="#">Reddit</a></li>
+                  <li><a href="#">Linkedin</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Discord</a></li>
+                  <li><a href="#">Bitclout</a></li>
+                  <li><a href="#">Instagram</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col mobileOnly footContact">
+              <div class="footer_widget foot_contact">
+                <ul class="widget_link">
+                  <li>
+                    <a href="tel:+1 (650) 924-9214">+1 (650) 924-9214</a>
+                  </li>
+                  <li>
+                    <a href="mailto:contact@xp.network">contact@xp.network</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="foot_links">
+            <p>A blockchain-agnostic network for building NFT dApps</p>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of use</a></li>
+            </ul>
+          </div>
+          <div class="copyRight">
+            © 2021 XP.NETWORK Ltd. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- /.bodyWrap -->
+
+  <!-- Js -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/owl.carousel.min.js"></script>
+  <script src="../assets/js/active.js"></script>
+  <script src="../assets/js/parts.js"></script>
+</body>
+
+</html>
