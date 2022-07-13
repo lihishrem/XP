@@ -955,20 +955,24 @@ span.wave:after {
 
 .bridgeImgNav:hover{
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 
 .bridgeImgNav:hover .aDicoverImgNav{
   color: #E22440;
+  cursor: pointer;
 }
 
 .titlebridgeImgNav{
+  cursor: pointer;
   /* position: relative;
   top: 20px;
   left: -100px; */
 }
 
 .textbridgeImgNav{
+  cursor: pointer;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -988,6 +992,7 @@ span.wave:after {
   display: flex;
   flex-direction: column;
   width: 300px;
+  cursor: pointer;
 }
 
 .linkBoxNav{

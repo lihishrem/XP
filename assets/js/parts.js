@@ -343,15 +343,15 @@ const header = `
       </a>
       <div class="linkBoxesNav">
        <a class="linkBoxNav" href="https://widget.xp.network/" target="_blank">
-        <label>
+        <label style="cursor: pointer;">
           Bridge widget
         </label>
         <label class="linkBoxNavText">
           Allows visually customizing and embedding the NFT bridge 
         </label>
       </a>
-      <a class="linkBoxNav" href="https://xp.network/api/" target="_blank">
-        <label>
+      <a class="linkBoxNav" href="/api/" target="_self">
+        <label style="cursor: pointer;">
           XPNET-JS API 
         </label>
         <label class="linkBoxNavText">
