@@ -329,8 +329,37 @@ const header = `
     <!-- <li class="nav-item">
         <a href="https://bridge.xp.network/" target="_blank" class="nav-link">NFT Bridge</a> --!>
       </li>
-      <li class="nav-item">
-        <a href="/api" class="nav-link">XPJS API</a>
+      <li class="nav-item mega-menu" id>
+        <a href="/community" class="nav-link" id="link-community" onclick='return false;'>Products</a>
+        <div class="drop-menu productsNavBox">
+        <a class="bridgeImgNav" href="https://bridge.xp.network/"  target="_blank">
+        <label class="titlebridgeImgNav">Multi-chain NFT bridge</label>
+        <label class="textbridgeImgNav">
+          Seamlessly move assets between chains
+        </label>
+        <label class="aDicoverImgNav">
+          Discover bridge ->
+        </label>
+      </a>
+      <div class="linkBoxesNav">
+       <a class="linkBoxNav" href="https://widget.xp.network/" target="_blank">
+        <label>
+          Bridge widget
+        </label>
+        <label class="linkBoxNavText">
+          Allows visually customizing and embedding the NFT bridge 
+        </label>
+      </a>
+      <a class="linkBoxNav" href="https://xp.network/api/" target="_blank">
+        <label>
+          XPNET-JS API 
+        </label>
+        <label class="linkBoxNavText">
+          XPJS API will get your NFT dApp up and running on multiple chains.
+        </label>
+      </a>
+      </div>
+        </div>
       </li>
       <li class="nav-item">
         <a href="/casestudies" class="nav-link">Case studies</a>

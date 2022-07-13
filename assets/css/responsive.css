@@ -200,8 +200,8 @@
 
   .activeDrop .drop-menu {
     max-height: 1000px;
-    padding-top: 18px !important;
-    padding-bottom: 18px !important;
+    padding-top: 18px ;
+    padding-bottom: 18px;
   }
 
   .drop-menu.resuouceMega .col-6 {
@@ -238,8 +238,41 @@
     padding-left: 24px !important;*/
   }
 
+  .productsNavBox{
+    display: flex;
+    flex-direction: column;
+  }
+
   .drop-menu.resuouceMega .row {
     margin: 0;
+  }
+  .productsNavBox .activeDrop .drop-menu{
+    padding-top: 0px !important;
+  }
+
+  .productsNavBox{
+    margin: 0px;
+    height: 380px !important;
+    padding-top: 0px;
+  }
+
+  .linkBoxNav:hover{
+    background-color: #F7F7F9;
+  }
+
+  .productsNavBox {
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .bridgeImgNav{
+    background-image: url("/assets/img/prod/bridge\ card\ mob.png");
+    width: 100vw;
+    border-radius: 0px;
+  }
+
+  .linkBoxNav{
+    width: 100vw;
   }
 
   body.flate_menu span.navTriger {
