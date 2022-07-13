@@ -374,7 +374,7 @@
 }
 
 .paddingBox{
-    height: 464px;
+    height: 580px;
     padding: 32px 10px 10px 32px;
 }
 
@@ -480,6 +480,14 @@
 
 .TitelWidth{
     width: 420px;
+}
+
+.mainnetLogo{
+    width: 138.67px;
+}
+
+.walletLogo{
+    width: 210px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -665,6 +673,15 @@
     .weAreHere{
         width: 250px;;
     }
+
+    .mainnetLogo{
+        width: 145px;
+    }
+
+    .walletLogo{
+        width: 145px;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
