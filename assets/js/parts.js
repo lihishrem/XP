@@ -347,7 +347,7 @@ const header = `
           Bridge widget
         </label>
         <label class="linkBoxNavText">
-          Allows visually customizing and embedding the NFT bridge 
+          Allows visually customizing and embedding the NFT bridge.
         </label>
       </a>
       <a class="linkBoxNav" href="/api/" target="_self">
@@ -607,7 +607,7 @@ $(document).ready(function () {
   fetch("../../data.json")
     .then((response) => response.json())
     .then((data) => {
-      const maxSymbols = 60;
+      const maxSymbols = 70;
 
       const getUpdate = (update, i, full) => {
         const string = stripLink(update?.text);

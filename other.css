@@ -1302,6 +1302,7 @@ span.readMore {
   left: 50%;
   transform: translateX(-50%);
   bottom: 5px;
+  display: none;
 }
 
 .fullUpdate .expandUpdate {
