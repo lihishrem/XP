@@ -617,7 +617,9 @@ $(document).ready(function () {
           ?.replaceAll(/\[?@\]?/gi, "");
 
         return `
-        <div class="topUpdate ${full ? "fullUpdate" : ""}">
+        <a href="${link}" target="${
+          update.openInNewTab ? "_blank" : "_self"
+        }" class="topUpdate ${full ? "fullUpdate" : ""}">
         <span class="dateUpdate">${update?.date}</span>
         <!-- <a href="${link}" class="learnMore"  target="${
           update.openInNewTab ? "_blank" : "_self"
@@ -630,9 +632,7 @@ $(document).ready(function () {
         <div class='child-container'>
             <div class="top-line">
               <img class="updateBadge" src="/assets/img/updates/badge.png"/>
-              <a href="${link}" target="${
-          update.openInNewTab ? "_blank" : "_self"
-        }"><img src="/assets/img/updates/moreArrow.png" class="more"/></a>
+              <img src="/assets/img/updates/moreArrow.svg" class="more"/>
               <!-- <span>${update?.date}</span> --!>
             </div>
             ${
@@ -657,7 +657,7 @@ $(document).ready(function () {
             }
           </div>
         
-          </div>`;
+          </a>`;
       };
 
       const topUpdates = `

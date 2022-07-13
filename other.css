@@ -994,7 +994,7 @@ section.feature_nft_area {
 }
 
 .topUpdate:hover .more{
-  content: url("/assets/img/updates/arrowHover.png");
+  content: url("/assets/img/updates/arrowHover.svg");
 }
 
 .fullUpdate {
