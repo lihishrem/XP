@@ -103,19 +103,20 @@
 }
 
 .overviewImg {
+  display: flex;
   width: 500px;
   height: 471px;
   background: #121415;
   border-radius: 0px 20px 20px 0px;
   background-image: url("/assets/img/skale\ case\ study/overwiev.png");
+  background-size: cover;
   justify-content: center;
   align-items: center;
 }
 
-
-.overviewImg:hover .playBtn{
-    transition: all .2s ease-in-out;
-    transform: scale(1.2);
+.overviewImg:hover .playBtn {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
 }
 
 .playBtn {
@@ -421,18 +422,21 @@ ul.community_links li {
     border-radius: 0px 0px 20px 20px;
   }
   .overviewImg {
-    height: auto;
+    height: 365px;
     width: 90vw;
     border-radius: 20px 20px 0px 0px;
     margin-top: -125px;
     background-image: url("/assets/img/skale case study/mobile/overwiev mob.png");
+    justify-content: center;
+    align-items: center;
+  }
+  .playBtn {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    top: 40%;
   }
 
-  .playBtn {
-    align-self: center;
-    width: 59px;
-    height: 59px;
-  }
   .blackBox {
     padding: 40px 30px;
     gap: 20px;
