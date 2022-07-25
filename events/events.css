@@ -790,7 +790,7 @@ margin-top: 22px;
     justify-content: center;
     align-items: center;
 }
-
+/* 
 .imgMedia1{    
     background-image: url("/assets/img/events/media/desk/MAPPING contracts 4.png");
 }
@@ -826,7 +826,7 @@ margin-top: 22px;
 }
 .imgMedia12{    
     background-image: url("/assets/img/events/media/desk/XP\ Talks\ with\ Thunder\ Lands\ desk.png");
-}
+} */
 
 
 .playBtnImg{
@@ -1090,7 +1090,7 @@ margin-top: 22px;
         height: 171.2px;
         align-self: center;
     }
-    .imgMedia1{
+    /* .imgMedia1{
         background-image: url("/assets/img/events/media/mob/MAPPING contracts 4.png");
     }
     .imgMedia2{    
@@ -1122,7 +1122,7 @@ margin-top: 22px;
     }
     .imgMedia11{    
         background-image: url("/assets/img/events/media/mob/bridge\ attacks\ mob.png");
-    }
+    } */
 
     .mediaImg:hover .playBtnImg{
         transform: scale(1);

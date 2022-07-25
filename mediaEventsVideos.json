@@ -1,0 +1,140 @@
+{"videosEventsMedia":[
+	{
+		"imgPath": "/assets/img/events/media/desk/bridge attacks desk.png",
+		"href": "https://www.youtube.com/watch?v=aEVbVgnrT5c",
+		"date":"9 Jul, 2022",
+		"text": "Exploring bridge attacks"
+	},
+	{
+		"imgPath": "/assets/img/events/media/desk/bridge attacks desk.png",
+		"href": "https://www.youtube.com/watch?v=aEVbVgnrT5c",
+		"date":"9 Jul, 2022",
+		"text": "Exploring bridge attacks"
+	},
+	{
+		"imgPath": "/assets/img/events/media/desk/bridge attacks desk.png",
+		"href": "https://www.youtube.com/watch?v=aEVbVgnrT5c",
+		"date":"9 Jul, 2022",
+		"text": "Exploring bridge attacks"
+	},
+	{
+		"imgPath": "/assets/img/events/media/desk/bridge attacks desk.png",
+		"href": "https://www.youtube.com/watch?v=aEVbVgnrT5c",
+		"date":"9 Jul, 2022",
+		"text": "Exploring bridge attacks"
+	},
+	{
+		"imgPath": "/assets/img/events/media/desk/bridge attacks desk.png",
+		"href": "https://www.youtube.com/watch?v=aEVbVgnrT5c",
+		"date":"9 Jul, 2022",
+		"text": "Exploring bridge attacks"
+	},
+	{
+		"imgPath": "/assets/img/events/media/desk/bridge attacks desk.png",
+		"href": "https://www.youtube.com/watch?v=aEVbVgnrT5c",
+		"date":"9 Jul, 2022",
+		"text": "Exploring bridge attacks"
+	},
+	{
+		"imgPath": "/assets/img/events/media/desk/bridge attacks desk.png",
+		"href": "https://www.youtube.com/watch?v=aEVbVgnrT5c",
+		"date":"9 Jul, 2022",
+		"text": "Exploring bridge attacks"
+	},
+	{
+		"imgPath": "/assets/img/events/media/desk/bridge attacks desk.png",
+		"href": "https://www.youtube.com/watch?v=aEVbVgnrT5c",
+		"date":"9 Jul, 2022",
+		"text": "Exploring bridge attacks"
+	},
+	{
+		"imgPath": "/assets/img/events/media/desk/bridge attacks desk.png",
+		"href": "https://www.youtube.com/watch?v=aEVbVgnrT5c",
+		"date":"9 Jul, 2022",
+		"text": "Exploring bridge attacks"
+	},
+	{
+		"imgPath": "/assets/img/events/media/desk/bridge attacks desk.png",
+		"href": "https://www.youtube.com/watch?v=aEVbVgnrT5c",
+		"date":"9 Jul, 2022",
+		"text": "Exploring bridge attacks"
+	},
+	{
+		"imgPath": "/assets/img/events/media/desk/bridge attacks desk.png",
+		"href": "https://www.youtube.com/watch?v=aEVbVgnrT5c",
+		"date":"9 Jul, 2022",
+		"text": "Exploring bridge attacks"
+	},
+	{
+		"imgPath": "/assets/img/events/media/desk/bridge attacks desk.png",
+		"href": "https://www.youtube.com/watch?v=aEVbVgnrT5c",
+		"date":"9 Jul, 2022",
+		"text": "Exploring bridge attacks"
+	}
+],
+"videosEventsPast":[
+        {
+		"imgPath": "/assets/img/events/past/desk/XP Talks with Thunder Lands desk.png",
+		"href": "javascript:void(0)",
+		"date":"1111 Jun, 2022",
+		"text": "Talks with Thunder Lands",
+		"country": "",
+		"flagImgPath" : ""
+	},
+        {
+		"imgPath": "/assets/img/events/past/desk/XP Talks with Thunder Lands desk.png",
+		"href": "https://www.youtube.com/watch?v=SXW13zaAEPs",
+		"date":"2222 Jun, 2022",
+		"text": "XP Talks with Thunder Lands",
+		"country": "",
+		"flagImgPath" : ""
+	},
+        {
+		"imgPath": "/assets/img/events/past/desk/XP Talks with Thunder Lands desk.png",
+		"href": "https://www.youtube.com/watch?v=SXW13zaAEPs",
+		"date":"3333 Jun, 2022",
+		"text": "XP Talks with Thunder Lands",
+		"country": "",
+		"flagImgPath" : ""
+	},
+        {
+		"imgPath": "/assets/img/events/past/desk/XP Talks with Thunder Lands desk.png",
+		"href": "https://www.youtube.com/watch?v=SXW13zaAEPs",
+		"date":"4444 Jun, 2022",
+		"text": "XP Talks with Thunder Lands",
+		"country": "",
+		"flagImgPath" : ""
+	},
+        {
+		"imgPath": "/assets/img/events/past/desk/XP Talks with Thunder Lands desk.png",
+		"href": "https://www.youtube.com/watch?v=SXW13zaAEPs",
+		"date":"5555 Jun, 2022",
+		"text": "XP Talks with Thunder Lands",
+		"country": "",
+		"flagImgPath" : ""
+	},
+	{
+		"imgPath": "/assets/img/events/past/desk/AIBC.png",
+		"href": "",
+		"date":"23 Mar, 2022",
+		"text": "AIBC Summit 2022",
+		"country": "Dubai, UAE",
+		"flagImgPath" : "/assets/img/events/icons/united-arab-emirates.svg"
+	},
+	{
+		"imgPath": "/assets/img/events/past/desk/XP.NETWORK Community AMA with Nir Blumberger.png",
+		"href": "https://www.youtube.com/watch?v=fnhHigC2Yxk&t=38s",
+		"date":"28 Feb, 2022",
+		"text": "XP.NETWORK Community AMA with Nir Blumberger",
+		"country": "",
+		"flagImgPath" : ""
+	},
+	{	
+		"imgPath": "/assets/img/events/past/desk/BLOCKCHANCE.png",
+		"href": "https://blog.xp.network/austrian-post-xp-network-to-announce-collaboration-in-blockchance-conference-bfba97fb3a81",
+		"date":"3 Dec, 2021",
+		"text": "BLOCKCHANCE Conference",
+		"country": "Hamburg, Germany",
+		"flagImgPath" : "/assets/img/events/icons/germany.svg"
+	}
+]}

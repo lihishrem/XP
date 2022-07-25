@@ -1,0 +1,32 @@
+{"videosMain":[
+	{
+		"popup":"1",
+		"srcEmbed":"https://www.youtube.com/embed/aEVbVgnrT5c",
+		"srcImg":"/assets/img/home/videos section/bridge attack.png"
+	},
+	{
+		"popup":"2",
+		"srcEmbed":"https://www.youtube.com/embed/SQe8zx-0bo0",
+		"srcImg":"/assets/img/home/videos section/bridge security.png"
+	},
+	{
+		"popup": "3",
+		"srcEmbed": "https://www.youtube.com/embed/wQx1J7FzT2o",
+		"srcImg": "/assets/img/home/videos section/evm.png"
+	},
+	{
+		"popup":"4",
+		"srcEmbed":"https://www.youtube.com/embed/H5YuChS32YE",
+		"srcImg": "/assets/img/home/videos section/Frame 1.png"
+	},
+	{
+		"popup":"5",
+		"srcEmbed":"https://www.youtube.com/embed/QvcWJDh4xWY",
+		"srcImg":"/assets/img/home/videos section/Frame 3.png"
+	},
+	{
+		"popup":"6",
+		"srcEmbed":"https://www.youtube.com/embed/H9cIt5BSSxc",
+		"srcImg":"/assets/img/home/videos section/Frame 4.png"
+	}
+]}

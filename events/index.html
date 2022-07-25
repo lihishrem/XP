@@ -377,7 +377,7 @@
 
          <section id="Past" style="display:none; flex-direction: column; gap: 20px;">
 
-          <a href="https://www.youtube.com/watch?v=SXW13zaAEPs" target="_blank" class="upcomingBox">
+          <!-- <a href="https://www.youtube.com/watch?v=SXW13zaAEPs" target="_blank" class="upcomingBox">
             <div class="upcomingDivImg">
               <img src="/assets/img/events/past/desk/XP Talks with Thunder Lands desk.png" class="upcomingImg"/>
             </div>   
@@ -546,14 +546,14 @@
             </div>
           </a>
 
-          
+           -->
 
 
         </section> 
 
 
        <section id="Media" class="MediaSection" style="display:none;">
-        <a href="https://www.youtube.com/watch?v=aEVbVgnrT5c" target="_blank" class="mediaBox">
+        <!-- <a href="https://www.youtube.com/watch?v=aEVbVgnrT5c" target="_blank" class="mediaBox">
           <div class="mediaImg imgMedia11"> 
             <img src="/assets/img/events/icons/play bttn.svg" class="playBtnImg"/>
           </div>
@@ -836,8 +836,7 @@
                 </div>
               </div>
             </div>
-          </a>
-
+          </a> -->
         </section> 
       
              
@@ -883,10 +882,6 @@
     </section>
     <p class="communityLink"><a href="/community/">All communities -></a></p>
   </div>
-
-            
-
-           
            
         </div>
     </div>
@@ -938,87 +933,115 @@
     </script>
 
     
-    <!-- <script>
-      jQuery(function () {
-          var $els = $('img[id^=israelCrypto]'),
-              i = 0,
-              len = $els.length;
+<script>
+  async function loadMediaVideos() {
+  const response = await fetch('/mediaEventsVideos.json');
+  const videos = await response.json();
+  const MediaSection = videos.videosEventsMedia;
+  
+  // Create the HTML
+  var html =
+    '<div class="MediaSection" >' +
+      MediaSection.map((item) => {
+        return `
+        <a href="${item.href}" target="_blank" class="mediaBox">
+            <div class="mediaImg" style='background-image: url("${item.imgPath}")'> 
+              <img src="/assets/img/events/icons/play bttn.svg" class="playBtnImg"/>
+            </div>
+            <div class="flexColumn">
+              <div class="lineUpcoming">
+                <img src="/assets/img/events/icons/calendar.svg"/>
+                <label class="upcomingDateText">${item.date}</label>
+              </div>
+              <label class="upcomingNameText">${item.text}</label>
+              <div class="lineUpcoming">
+                <div class="webcast">
+                  <img src="/assets/img/events/icons/online.svg"/>
+                  <label class="upcomingPlaceText">Online event</label>
+                </div>
+                <div>
+                  <img src="/assets/img/events/icons/youtube.svg"/>
+                  <label class="upcomingPlaceText">YouTube</label>
+                </div>
+              </div>
+            </div>
+          </a>`
+      }).join('') +
+    '</div>';
 
-          $els.slice(1).hide();
-          setInterval(function () {
-              $els.eq(i).fadeOut(function () {
-                  i = (i + 1) % len
-                  $els.eq(i).fadeIn();
-              })
-          }, 4000)
-      })
-      jQuery(function () {
-          var $els = $('img[id^=TMRW]'),
-              i = 0,
-              len = $els.length;
+    // Log and inject into the DOM
+    console.log(html);
+      document.querySelector('#Media').innerHTML = html;
+  }
+  loadMediaVideos();
 
-          $els.slice(1).hide();
-          setInterval(function () {
-              $els.eq(i).fadeOut(function () {
-                  i = (i + 1) % len
-                  $els.eq(i).fadeIn();
-              })
-          }, 4000)
-      })
-      jQuery(function () {
-          var $els = $('img[id^=AIBC]'),
-              i = 0,
-              len = $els.length;
+  async function loadPastVideos() {
+  const response = await fetch('/mediaEventsVideos.json');
+  console.log(response);
+  const videos = await response.json();
+  console.log(videos);
+  const pastSection = videos.videosEventsPast;
+  
+  // Create the HTML
+  var html =
+    '<div>' +
+      pastSection.map((item) => {
+        let target = (item.href !== "javascript:void(0)") ? "_blank" : "_self";
+        if(item.country ==="")
+        {
+          return `
+        <a href="${item.href}" target="${target}" class="upcomingBox">
+            <div class="upcomingDivImg">
+              <img src="${item.imgPath}" class="upcomingImg"/>
+            </div>   
+            <div class="flexColumn">
+              <div class="lineUpcoming">
+                <img src="/assets/img/events/icons/calendar.svg"/>
+                <label class="upcomingDateText">${item.date}</label>
+              </div>
+              <label class="upcomingNameText">${item.text}</label>
+              <div class="lineUpcoming">
+                <div class="webcast">
+                  <img src="/assets/img/events/icons/webcast.svg"/>
+                  <label class="upcomingPlaceText">Webcast</label>
+                </div>
+                <div>
+                  <img src="/assets/img/events/icons/twitter.svg"/>
+                  <label class="upcomingPlaceText">Twitter Space</label>
+                </div>
+              </div>
+            </div>
+          </a>`
+        }
+        else{
+          return `
+          <a href="${item.href}" target="${target}" class="upcomingBox">
+            <div class="upcomingDivImg">
+              <img src="${item.imgPath}" class="upcomingImg"/>
+            </div>
+            
+            <div class="flexColumn">
+              <div class="lineUpcoming">
+                <img src="/assets/img/events/icons/calendar.svg"/>
+                <label class="upcomingDateText">${item.date}</label>
+              </div>
+              <label class="upcomingNameText">${item.text}</label>
+              <div class="lineUpcoming">
+                <img src="${item.flagImgPath}"/>
+                <label class="upcomingPlaceText">${item.country}</label>
+              </div>
+            </div>
+          </a>`
+        }
+      }).join('') +
+    '</div>';
 
-          $els.slice(1).hide();
-          setInterval(function () {
-              $els.eq(i).fadeOut(function () {
-                  i = (i + 1) % len
-                  $els.eq(i).fadeIn();
-              })
-          }, 4000)
-      })
-      jQuery(function () {
-          var $els = $('img[id^=BLOCKCHANCE]'),
-              i = 0,
-              len = $els.length;
-
-          $els.slice(1).hide();
-          setInterval(function () {
-              $els.eq(i).fadeOut(function () {
-                  i = (i + 1) % len
-                  $els.eq(i).fadeIn();
-              })
-          }, 4000)
-      })
-      </script>
-      <script>
-        jQuery(function () {
-          var $els = $('img[id^=BLOCK]'),
-              i = 0,
-              len = $els.length;
-
-          $els.slice(1).hide();
-          setInterval(function () {
-              $els.eq(i).fadeOut(function () {
-                  i = (i + 1) % len
-                  $els.eq(i).fadeIn();
-              })
-          }, 4000)
-      })
-      jQuery(function () {
-          var $els = $('img[id^=Mob]'),
-              i = 0,
-              len = $els.length;
-
-          $els.slice(1).hide();
-          setInterval(function () {
-              $els.eq(i).fadeOut(function () {
-                  i = (i + 1) % len
-                  $els.eq(i).fadeIn();
-              })
-          }, 4000)
-      })
-      </script> -->
+    // Log and inject into the DOM
+    console.log(html);
+      document.querySelector('#Past').innerHTML = html;
+  }
+  loadPastVideos();
+  
+</script>
   </body>
 </html>

@@ -1459,183 +1459,11 @@
                 for more tutorials and interviews.</p>
             </div>
 
-            <div class="flexWrapFeaturedVideos">
-              
-            <a href="#popup5">
-            <img class="featuredVideoImgMain"  src="/assets/img/home/videos section/bridge attack.png" />
-            </a>
-            <div id="popup5">
-                <div class="popup">
-                  <iframe
-                  id="popup_5"
-                    class="popup-video"
-                    src="https://www.youtube.com/embed/aEVbVgnrT5c"
-                    height="100%"
-                    allowfullscreen="allowfullscreen"
-                  ></iframe>
-                </div>
-                <div class="popup-close">
-                  <a href="#Featured-videos" onclick="stop(5)">
-                  <i class="fas fa-times-circle"></i>
-                </a>
-              </div>
+            <div id="videosMain">
+
             </div>
 
-
-            <!-- video - bridge security -->
-            <a href="#popup2">
-              <img class="featuredVideoImgMain"  src="/assets/img/home/videos section/bridge security.png" />
-            </a>
-        
-            <div id="popup2">
-                <div class="popup">
-                  <iframe 
-                  id="popup_2"
-                    class="popup-video"
-                    src="https://www.youtube.com/embed/SQe8zx-0bo0"
-                    height="100%"
-                    allowfullscreen="allowfullscreen"
-                  ></iframe>
-                </div>
-                <div class="popup-close">
-                <a href="#Featured-videos" onclick="stop(2)">
-                  <i class="fas fa-times-circle"></i>
-                </a>
-              </div>
-            </div>
-
-                <!-- video -EVM -->
-                <a href="#popup6">
-                  <img class="featuredVideoImgMain"  src="/assets/img/home/videos section/evm.png" />
-                </a>
-            
-                <div id="popup6">
-                    <div class="popup">
-                      <iframe 
-                      id="popup_6"
-                        class="popup-video"
-                        src="https://www.youtube.com/embed/wQx1J7FzT2o"
-                        height="100%"
-                        allowfullscreen="allowfullscreen"
-                      ></iframe>
-                    </div>
-                    <div class="popup-close">
-                    <a href="#Featured-videos" onclick="stop(6)">
-                      <i class="fas fa-times-circle"></i>
-                    </a>
-                  </div>
-                </div>
-
-              <!-- video 2-who needs nft bridge
-              <a href="#popup2">
-                <img class="featuredVideoImgMain"  src="/assets/img/home/videos section/Frame 2.png" />
-              </a>
-              <div id="popup2">
-                  <div class="popup">
-                    <iframe
-                    id="popup_2"
-                      class="popup-video"
-                      src="https://www.youtube.com/embed/p21pCEvyDQw"
-                      height="100%"
-                      allowfullscreen="allowfullscreen"
-                    ></iframe>
-                  </div>
-                  <div class="popup-close">
-                  <a href="#Featured-videos" onclick="stop(2)">
-                    <i class="fas fa-times-circle"></i>
-                  </a>
-                </div>
-              </div> -->
-
-          <!-- video -bridging -->
-            <a href="#popup1">
-              <img class="featuredVideoImgMain"  src="/assets/img/home/videos section/Frame 1.png" />
-            </a>
-        
-            <div id="popup1">
-                <div class="popup">
-                  <iframe 
-                  id="popup_1"
-                    class="popup-video"
-                    src="https://www.youtube.com/embed/H5YuChS32YE"
-                    height="100%"
-                    allowfullscreen="allowfullscreen"
-                  ></iframe>
-                </div>
-                <div class="popup-close">
-                <a href="#Featured-videos" onclick="stop(1)">
-                  <i class="fas fa-times-circle"></i>
-                </a>
-              </div>
-            </div>
-
-         
-             <!-- video -how to use -->
-             <a href="#popup3">
-              <img class="featuredVideoImgMain"  src="/assets/img/home/videos section/Frame 3.png" />
-            </a>
-            <div id="popup3">
-                <div class="popup">
-                  <iframe
-                  id="popup_3"
-                    class="popup-video"
-                    src="https://www.youtube.com/embed/QvcWJDh4xWY"
-                    height="100%"
-                    allowfullscreen="allowfullscreen"
-                  ></iframe>
-                </div>
-                <div class="popup-close">
-                  <a href="#Featured-videos" onclick="stop(3)">
-                  <i class="fas fa-times-circle"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- video -how to use -->
-            <a href="#popup4">
-              <img class="featuredVideoImgMain"  src="/assets/img/home/videos section/Frame 4.png" />
-            </a>
-            <div id="popup4">
-                <div class="popup">
-                  <iframe
-                  id="popup_4"
-                    class="popup-video"
-                    src="https://www.youtube.com/embed/H9cIt5BSSxc"
-                    height="100%"
-                    allowfullscreen="allowfullscreen"
-                    
-                  ></iframe>
-                </div>
-                <div class="popup-close">
-                  <a href="#Featured-videos" onclick="stop(4)">
-                  <i class="fas fa-times-circle"></i>
-                </a>
-              </div>
-            </div>
-
-             <!-- video -how to use -->
-             <!-- <a href="#popup5">
-              <img class="featuredVideoImgMain"  src="/assets/img/home/videos section/Frame 5.png" />
-            </a>
-            <div id="popup5">
-                <div class="popup">
-                  <iframe
-                  id="popup_5"
-                    class="popup-video"
-                    src="https://www.youtube.com/embed/CTxtFnABUrg"
-                    height="100%"
-                    allowfullscreen="allowfullscreen"
-                  ></iframe>
-                </div>
-                <div class="popup-close">
-                  <a href="#Featured-videos" onclick="stop(5)">
-                  <i class="fas fa-times-circle"></i>
-                </a>
-              </div>
-            </div> -->
-
-          </div>
-
+          
            
           </div>
           <br/>
@@ -1818,6 +1646,50 @@
          $(`#popup_${id}`).attr("src",video);
       }
    
+    </script>
+     <script>
+      async function loadVideos() {
+      const response = await fetch('./videos.json');
+      const videos = await response.json();
+      console.log(videos);
+      const videosMain = videos.videosMain;
+      console.log(videosMain); 
+      
+
+      // Create the HTML
+      var html =
+        '<div class="flexWrapFeaturedVideos" >' +
+          videosMain.map((item) => {
+            return `
+              <a href="#popup${item.popup}">
+                    <img class="featuredVideoImgMain"  src="${item.srcImg}" />
+                  </a>
+                  <div id="popup${item.popup}">
+                      <div class="popup">
+                        <iframe
+                        id="popup_${item.popup}"
+                          class="popup-video"
+                          src="${item.srcEmbed}"
+                          height="100%"
+                          allowfullscreen="allowfullscreen"
+                        ></iframe>
+                      </div>
+                      <div class="popup-close">
+                        <a href="#Featured-videos" onclick="stop(${item.popup})">
+                        <i class="fas fa-times-circle"></i>
+                      </a>
+                    </div>
+                  </div>`
+          }).join('') +
+        '</div>';
+
+      // Log and inject into the DOM
+      console.log(html);
+      document.querySelector('#videosMain').innerHTML = html;
+      }
+      loadVideos();
+
+      
     </script>
   </body>
 </html>

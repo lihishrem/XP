@@ -607,7 +607,7 @@ $(document).ready(function () {
   fetch("../../data.json")
     .then((response) => response.json())
     .then((data) => {
-      const maxSymbols = 70;
+      const maxSymbols = 72;
 
       const getUpdate = (update, i, full) => {
         const string = stripLink(update?.text);
