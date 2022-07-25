@@ -38,10 +38,10 @@
   font-size: 18px;
   font-weight: 500;
 }
-.brThunder{
+.brThunder {
   display: block;
 }
-.brMob{
+.brMob {
   display: none;
 }
 .successWrapper p {
@@ -398,7 +398,6 @@ body {
   margin-top: -7px;
 }
 
-
 .blackBoxCont:hover .boxContent img,
 .whiteBoxCont:hover .boxContent img {
   /*transform: scale(1.05);*/
@@ -411,14 +410,11 @@ body {
   color: #e22440;
 }
 
-
-
-.blackBoxCont:hover .white_text_btn, .whiteBoxCont:hover .black_text_btn  {
+.blackBoxCont:hover .white_text_btn,
+.whiteBoxCont:hover .black_text_btn {
   background: #e22440;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-
-
 
 .blackBoxCont:hover .white_text_btn.disabledBtn {
   color: #fff;
@@ -498,7 +494,7 @@ body {
 
 .boxContent .black_text_btn {
   background-color: #282829;
-  color: #FFFFFF
+  color: #ffffff;
 }
 
 .communityLink {
@@ -722,7 +718,8 @@ ul.commuLinks li a img.accented {
 }
 
 .homePage .bannerWrap {
-  background: url("/assets/img/home/XP\ main\ desk.svg") no-repeat scroll center/cover;
+  background: url("/assets/img/home/XP\ main\ desk.svg") no-repeat scroll
+    center/cover;
 }
 
 .homePage .home_hero_area {
@@ -809,34 +806,33 @@ ul.commuLinks li a img.accented {
 
 .financeComposPic {
   position: absolute;
-  
 }
 
 .rightFace {
   right: 0;
-  transform: translate(35%, -17%) scale(.85);
+  transform: translate(35%, -17%) scale(0.85);
 }
 
 .rightBlur {
   right: 0;
-  transform: translate(92%, 20%) scale(.85);
+  transform: translate(92%, 20%) scale(0.85);
   z-index: -1;
 }
 
 .cosmo {
   left: 0;
-  transform: translate(-100%, -25%) scale(.85);
+  transform: translate(-100%, -25%) scale(0.85);
 }
 
 .bird {
   left: 0;
-  transform: translate(-180%, 35%) scale(.85);
+  transform: translate(-180%, 35%) scale(0.85);
   z-index: 2;
 }
 
 .blurFace {
   left: 0;
-  transform: translate(-36%, 0) scale(.85);
+  transform: translate(-36%, 0) scale(0.85);
   z-index: -1;
 }
 
@@ -844,16 +840,15 @@ ul.commuLinks li a img.accented {
   z-index: -1;
   top: 10%;
   left: 0;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .financePanel {
   display: flex;
-  background: #15151F;
+  background: #15151f;
   color: #fff;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .financePanel img {
@@ -861,11 +856,12 @@ ul.commuLinks li a img.accented {
   transform: translateX(10%);
 }
 
-.financePanel h2, .financePanel h3  {
-    font-family: Poppins;
-    font-size: 38px;
-    font-weight: 300;
-} 
+.financePanel h2,
+.financePanel h3 {
+  font-family: Poppins;
+  font-size: 38px;
+  font-weight: 300;
+}
 
 .financePanel h3 {
   font-size: 36px;
@@ -880,7 +876,10 @@ ul.commuLinks li a img.accented {
   font-weight: 400;
 }
 
-.snafuPage .austin_cont p,  .financePage .austin_cont p, .austin_cont p, .theosPage .austin_cont p{
+.snafuPage .austin_cont p,
+.financePage .austin_cont p,
+.austin_cont p,
+.theosPage .austin_cont p {
   text-align: left;
 }
 
@@ -888,19 +887,22 @@ ul.commuLinks li a img.accented {
   padding-top: 10px;
 }
 
-.snafuPage .content_text h3, .financePage .content_text h3, .theosPage .content_text h3{
+.snafuPage .content_text h3,
+.financePage .content_text h3,
+.theosPage .content_text h3 {
   margin-top: -15px;
   font-family: Inter, sans-serif;
   padding-right: 20px;
 }
 
-.snafuPage h6, .financePage h6{
+.snafuPage h6,
+.financePage h6 {
   font-size: 17px;
   font-family: Inter, sans-serif;
 }
 
 .financePage .opulous_box a {
-  color: #390FA3;
+  color: #390fa3;
 }
 
 .financePage .austin_cont {
@@ -908,8 +910,8 @@ ul.commuLinks li a img.accented {
 }
 
 .financePage .opulous_box {
-    margin-bottom: 0;
-} 
+  margin-bottom: 0;
+}
 
 .financePage .content_boxes {
   padding: 28px 0;
@@ -919,7 +921,8 @@ ul.commuLinks li a img.accented {
   font-size: 18px;
 }
 
-.financePage .content_title, .snafuPage .content_title {
+.financePage .content_title,
+.snafuPage .content_title {
   padding-bottom: 18px;
 }
 
@@ -927,30 +930,25 @@ ul.commuLinks li a img.accented {
   padding-top: 30px;
 }
 
-
-
 .theosPage .opilous_hero_area::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('./assets/img/theos/mainBanner.png');
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/img/theos/mainBanner.png");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
-
-
-.theosPage .opilous_hero_area .container{
+.theosPage .opilous_hero_area .container {
   margin-top: 40px;
   transform: translateY(50%);
 }
 
-.theosPage  .opulous_box h3 {
+.theosPage .opulous_box h3 {
   max-width: 850px;
 }
 
@@ -966,7 +964,6 @@ section.feature_nft_area {
   padding-top: 40px;
 }
 
-
 .topUpdates {
   transform: translateY(-150%);
   display: flex;
@@ -977,23 +974,23 @@ section.feature_nft_area {
 .topUpdate {
   flex: 1;
   height: 164px;
-  background-color: #39393D;
+  background-color: #39393d;
   border-radius: 6px;
   padding: 14px 16px 28px 16px;
   margin-right: 24px;
   position: relative;
   cursor: pointer;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
-.dateUpdate{
+.dateUpdate {
   position: absolute;
   bottom: 5px;
-  color:rgb(230, 221, 221);
+  color: rgb(230, 221, 221);
   font-size: 12px;
 }
 
-.topUpdate:hover .more{
+.topUpdate:hover .more {
   content: url("/assets/img/updates/arrowHover.svg");
 }
 
@@ -1001,12 +998,12 @@ section.feature_nft_area {
   position: absolute;
   width: 100%;
   left: 0;
-  top:0;
+  top: 0;
   z-index: 15;
   height: auto;
   background-color: #424246;
   min-height: 100%;
-  animation: fadein .5s ease;
+  animation: fadein 0.5s ease;
 }
 
 #botContainer {
@@ -1020,9 +1017,7 @@ section.feature_nft_area {
 .topUpdate p a {
   color: inherit;
   text-decoration: underline;
-
 }
-
 
 .topUpdate p a:hover {
   color: rgb(193, 193, 209);
@@ -1033,9 +1028,9 @@ section.feature_nft_area {
 }
 
 .topUpdate p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
-  opacity: .7;
+  opacity: 0.7;
   line-height: 27px;
 }
 
@@ -1044,16 +1039,16 @@ section.feature_nft_area {
   height: 100%;
 }
 
-.topUpdate  .top-line {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
+.topUpdate .top-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
-.topUpdate  .top-line span {
-    color: #D7D7DC;
-    font-size: 12px;
+.topUpdate .top-line span {
+  color: #d7d7dc;
+  font-size: 12px;
 }
 
 .updateElispis {
@@ -1061,31 +1056,26 @@ section.feature_nft_area {
   position: absolute;
   right: 15px;
   bottom: 29px;
-  color: #FFFFFF;
-  opacity: .7;
+  color: #ffffff;
+  opacity: 0.7;
 }
 
-.topUpdate  .top-line  .badge {
-
+.topUpdate .top-line .badge {
 }
-
 
 .botUpdates {
-    display: flex;
-    margin-top: 30px;
-    align-items: stretch;
-    justify-content: center;
+  display: flex;
+  margin-top: 30px;
+  align-items: stretch;
+  justify-content: center;
 }
 
-
 .botUpdate {
-    flex: 1;
-    margin-right: 24px;
-    border-radius: 20px;
-    overflow: hidden;
-    cursor: pointer;
-
-
+  flex: 1;
+  margin-right: 24px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .botUpdate:last-of-type {
@@ -1104,16 +1094,16 @@ section.feature_nft_area {
 }
 
 .botUpdate .botCard {
-    padding: 20px 30px;
-    background-color: #fff;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height: 100%;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100%;
 }
 
 .botUpdate .botCard span {
   font-size: 16px;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .botUpdate .botCard p {
@@ -1125,7 +1115,7 @@ section.feature_nft_area {
 .expandedUpdate {
   position: absolute;
   overflow: hidden;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   background-color: #39393d;
@@ -1139,70 +1129,72 @@ section.feature_nft_area {
   position: absolute;
   bottom: 0px;
   right: 8px;
-  color:rgb(230, 221, 221);
+  color: rgb(230, 221, 221);
   font-size: 16px;
   text-decoration: underline;
 }
 
 .learnMore:hover {
-  color:rgb(240, 234, 234);
+  color: rgb(240, 234, 234);
 }
 
-
 .driftersPage .opilous_hero_area::before {
-  background-image: url('./assets/img/drifters/drifterBanner.png');
+  background-image: url("./assets/img/drifters/drifterBanner.png");
 }
 
 .thunderLandsPage .thunderLandsBg::before {
-  background-image: url('/assets/img/thunderLands/Rectangle\ 2104.png');
+  background-image: url("/assets/img/thunderLands/Rectangle\ 2104.png");
   height: 600px;
   top: 0px;
 }
 
-
 .thunderLandsPage section.opilous_hero_area {
-  background:none;
+  background: none;
 }
 
 .streetpunksPage .streetpunksBg::before {
-  background-image: url('/assets/img/streetpunks/desktop/Background.png');
+  background-image: url("/assets/img/streetpunks/desktop/Background.png");
   height: 600px;
   top: 0px;
 }
 
-
 .paviaPage .paviaBg::before {
-  background-image: url('/assets/img/pavia\ case\ study/desktop/Background.png');
+  background-image: url("/assets/img/pavia\ case\ study/desktop/Background.png");
   height: 550px;
   top: 0px;
 }
-
 
 .apesPage .apesBg::before {
-  background-image: url('/assets/img/Apes\ planet/desk/bg.png');
+  background-image: url("/assets/img/Apes\ planet/desk/bg.png");
   height: 550px;
   top: 0px;
 }
 
-
 .rocketsPage .rocketsBg::before {
-  background-image: url('/assets/img/RM\ case\ study/desktop/RM background desk.png');
+  background-image: url("/assets/img/RM\ case\ study/desktop/RM background desk.png");
+  height: 550px;
+  top: 0px;
+  background-color: black;
+}
+
+.skalePage .skaleBg::before {
+  background-image: url("/assets/img/skale\ case\ study/background.png");
   height: 550px;
   top: 0px;
   background-color: black;
 }
 
 .impsPage .impsBg::before {
-  background-image: url('/assets/img/IMPs/imps\ bg.png');
+  background-image: url("/assets/img/IMPs/imps\ bg.png");
   height: 600px;
   top: 0px;
 }
 
 .impsPage section.opilous_hero_area {
-  background:none;
+  background: none;
 }
 
-.thunderLandsPage .opulous_box{
+.thunderLandsPage .opulous_box {
   margin-top: -270px;
 }
 
@@ -1214,7 +1206,7 @@ section.feature_nft_area {
   margin-bottom: 10px;
 }
 
-.driftersPage  .caseFace {
+.driftersPage .caseFace {
   align-items: center;
 }
 
@@ -1226,9 +1218,8 @@ section.feature_nft_area {
   transform: translateY(-60%);
 }
 
-
 .driftersPage .austin_cont {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .driftersPage .content_text h3 {
@@ -1242,12 +1233,12 @@ section.feature_nft_area {
 .impsPage .centerDivText {
   width: 640px;
   height: 186px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 180%;
-  color: #0E1220;
+  color: #0e1220;
   opacity: 0.9;
   justify-content: center;
   margin: auto;
@@ -1280,7 +1271,7 @@ section.feature_nft_area {
 }
 
 .botUpdate .topCard img {
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .botUpdate:hover .topCard img {
@@ -1292,9 +1283,8 @@ span.readMore {
   color: black;
 }
 
-.botUpdate:hover span.readMore  {
-  color: 
-  #E22440;
+.botUpdate:hover span.readMore {
+  color: #e22440;
 }
 
 .expandUpdate {
@@ -1308,7 +1298,6 @@ span.readMore {
 .fullUpdate .expandUpdate {
   transform: rotate(180deg);
 }
-
 
 .newsLetterWrapper .inputWrapper {
   margin-top: 1px;
@@ -1334,7 +1323,7 @@ span.readMore {
 .newsLetterWrapper input {
   border-radius: 8px;
   border: 1px solid#3F3F42;
-  background-color: #2B2B2C;
+  background-color: #2b2b2c;
   color: #fff;
   padding: 10px 15px;
   transition: all 0.3s ease;
@@ -1349,16 +1338,16 @@ span.readMore {
 }
 
 .newsLetterWrapper h4 {
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: 700;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .newsLetterWrapper p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 14px;
   margin-top: 10px;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .newsLetterWrapper input:focus,
@@ -1370,17 +1359,14 @@ input.failedEmail {
   border-color: rgb(218, 109, 90);
 }
 
-
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px #2B2B2C inset !important;
-
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #2b2b2c inset !important;
 }
 
-
-input:-webkit-autofill{
+input:-webkit-autofill {
   -webkit-text-fill-color: rgb(241, 238, 238) !important;
 }
 
@@ -1395,7 +1381,6 @@ input:-webkit-autofill{
 }
 
 @media only screen and (max-width: 766px) {
- 
   img.box_content_img {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
@@ -1405,10 +1390,9 @@ input:-webkit-autofill{
     padding-top: 10px !important;
   }
 
-
-
-  .snafuPage .case_opulous_contBox .content_boxes, .financePage  .case_opulous_contBox .content_boxes {
-      padding-top: 0 !important;
+  .snafuPage .case_opulous_contBox .content_boxes,
+  .financePage .case_opulous_contBox .content_boxes {
+    padding-top: 0 !important;
   }
 
   .menuItemWrapper p.mobileOnly {
@@ -1460,8 +1444,6 @@ input:-webkit-autofill{
     margin-right: 10px;
   }
 }
-
-
 
 @media only screen and (max-width: 991px) {
   .homePage .home_hero_area {
@@ -1521,22 +1503,17 @@ input:-webkit-autofill{
   }
 }
 
-
 @media only screen and (max-width: 600px) {
-
- 
-
   .botUpdate .topCard img {
     transition: unset;
   }
-  
 
   .botUpdates.owl-carousel .owl-item {
-    -webkit-transition: opacity .3s  ease-in-out;
-    -moz-transition: opacity .3s  ease-in-out;
-    -ms-transition: opacity .3s  ease-in-out;
-    -o-transition: opacity .3s ease-in-out;
-    transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .homePage .home_content {
@@ -1553,7 +1530,6 @@ input:-webkit-autofill{
     transform: translateY(0);
     width: 100%;
     align-items: stretch;
-  
   }
 
   .botUpdate {
@@ -1568,13 +1544,10 @@ input:-webkit-autofill{
   .newCase {
     width: 143px;
   }
-  
-
 
   .driftersPage .opilous_hero.text-center {
     transform: translateY(0);
   }
-
 
   .driftersPage .case_opulous_contBox .content_boxes {
     margin-top: 10px;
@@ -1598,15 +1571,14 @@ input:-webkit-autofill{
     margin-top: 20px;
   }
 
-  .driftersPage  .caseFace {
+  .driftersPage .caseFace {
     align-items: unset;
     padding-bottom: 0 !important;
   }
 
-
   .theosPage .newform_card {
-      margin-bottom: -15px;
-      margin-top: -25px;
+    margin-bottom: -15px;
+    margin-top: -25px;
   }
 
   .content_title h2 {
@@ -1615,59 +1587,63 @@ input:-webkit-autofill{
   }
 
   .theosPage .opilous_hero_area::before {
-    background-image: url('./assets/img/theos/bannerMobile.png')
+    background-image: url("./assets/img/theos/bannerMobile.png");
   }
 
   .driftersPage .opilous_hero_area::before {
-    background-image: url('./assets/img/drifters/drifterBannerMob.png')
-    
+    background-image: url("./assets/img/drifters/drifterBannerMob.png");
   }
 
   .thunderLandsPage .thunderLandsBg::before {
-    background-image: url('/assets/img/thunderLands/RectangleMob2104.png');
+    background-image: url("/assets/img/thunderLands/RectangleMob2104.png");
     height: auto;
   }
 
   .streetpunksPage .streetpunksBg::before {
-    background-image: url('/assets/img/streetpunks/mob/background.png');
+    background-image: url("/assets/img/streetpunks/mob/background.png");
     height: auto;
   }
 
   .paviaPage .paviaBg::before {
-    background-image: url('/assets/img/pavia\ case\ study/mob/background.png');
+    background-image: url("/assets/img/pavia\ case\ study/mob/background.png");
     height: 480px;
   }
 
-
   .apesPage .apesBg::before {
-    background-image: url('/assets/img/Apes\ planet/mob/bg mob.png');
+    background-image: url("/assets/img/Apes\ planet/mob/bg mob.png");
     height: 550px;
     top: 0px;
   }
 
   .rocketsPage .rocketsBg::before {
-    background-image: url('/assets/img/RM\ case\ study/mob/RM background mob.png');
+    background-image: url("/assets/img/RM\ case\ study/mob/RM background mob.png");
     height: 500px;
     top: 0px;
   }
-  
-  .impsPage .impsBg::before {
-    background-image: url('/assets/img/IMPs/imps\ bg.png');
-    height:auto
+
+  .skalePage .skaleBg::before {
+    background-image: url("/assets/img/skale\ case\ study/mobile/background mob.png");
+    height: 500px;
+    top: 0px;
   }
-  .thunderLandsPage .thunderLandsTitleMob{
+
+  .impsPage .impsBg::before {
+    background-image: url("/assets/img/IMPs/imps\ bg.png");
+    height: auto;
+  }
+  .thunderLandsPage .thunderLandsTitleMob {
     content: url("/assets/img/thunderLands/image\ 54\ mobile.png");
     width: max-content;
     height: max-content;
   }
 
-  .impsPage .impsTitleMob{
+  .impsPage .impsTitleMob {
     content: url("/assets/img/IMPs/IMPS\ logo\ small.png");
     width: max-content;
     height: max-content;
   }
 
-  .streetpunksPage .spTitleMob{
+  .streetpunksPage .spTitleMob {
     content: url("/assets/img/streetpunks/mob/STREETPUNKS\ _logo\ white\ mob.svg");
     width: max-content;
     height: max-content;
@@ -1679,12 +1655,12 @@ input:-webkit-autofill{
   }
 
   .driftersPage .opilous_hero_area {
-      padding-top: 10px;
+    padding-top: 10px;
   }
 
   .thunderLandsPage .opilous_hero_area {
-      margin: 0px;
-}
+    margin: 0px;
+  }
 
   .theosPage .opilous_hero_area .container {
     margin-top: 0;
@@ -1702,7 +1678,8 @@ input:-webkit-autofill{
     margin-top: -84px;
   }
 
-  .financePage .content_title h2, .snafuPage .content_title h2 {
+  .financePage .content_title h2,
+  .snafuPage .content_title h2 {
     margin-bottom: 0;
     margin-top: 18px;
   }
@@ -1719,12 +1696,13 @@ input:-webkit-autofill{
     transform: unset;
   }
 
-  .financePanel h2, .financePanel h3 {
+  .financePanel h2,
+  .financePanel h3 {
     font-size: 26px;
   }
 
   .finWaves {
-    top:0;
+    top: 0;
     left: 0;
     opacity: 1;
     left: -400px;
@@ -1740,8 +1718,6 @@ input:-webkit-autofill{
   .elrondCard {
     padding-bottom: 30px !important;
   }
-
-
 
   .homePage section.home_hero_area {
     margin-bottom: 0px !important;
@@ -1841,7 +1817,6 @@ input:-webkit-autofill{
 
   .boxContent > a {
     bottom: -10px;
-
   }
 
   .content_title {
@@ -1949,7 +1924,6 @@ input:-webkit-autofill{
   .caseFace {
     padding-top: 0px !important;
     margin-top: -10px;
-  
   }
 
   .caseFace .content_title img {
@@ -1957,7 +1931,7 @@ input:-webkit-autofill{
   }
 
   .driftersPage .caseFace .content_title img {
-    margin-bottom: 0
+    margin-bottom: 0;
   }
 }
 
@@ -1967,7 +1941,7 @@ input:-webkit-autofill{
 }
 
 .homePage .home_content p {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .teamPage .menuItemWrapper p,
@@ -2039,14 +2013,12 @@ input:-webkit-autofill{
   /* margin-inline-start: -10px; */
 }
 
-
-
 .fullWidthImg {
   min-width: 100%;
   height: 100%;
 }
 
-.grants{
+.grants {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2058,10 +2030,10 @@ input:-webkit-autofill{
   border-radius: 20px;
 }
 
-.grantsTitle{
+.grantsTitle {
   width: 116px;
   height: 41px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
@@ -2069,38 +2041,38 @@ input:-webkit-autofill{
   display: flex;
   align-items: flex-end;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.grantsContent{
+.grantsContent {
   width: 416px;
   height: 31px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 180%;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.7;
   overflow-wrap: normal;
 }
 
-.rowCenter{
+.rowCenter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   /* align-items: center; */
 }
 
-.columsCenter{
+.columsCenter {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   /* align-items: center; */
 }
 
-.boxes{
+.boxes {
   margin-top: 5%;
   display: flex;
   flex-direction: row;
@@ -2109,22 +2081,22 @@ input:-webkit-autofill{
   gap: 20px 20px;
 }
 
-.humansImg{
+.humansImg {
   width: 50%;
   height: 50%;
 }
 
-.selectedCommentBtn{
+.selectedCommentBtn {
   width: 44px;
   height: 2px;
-  background: #E22440;
+  background: #e22440;
   border: none;
 }
 
-.commentBtn{
+.commentBtn {
   width: 44px;
   height: 2px;
-  background: #B9B9C6;
+  background: #b9b9c6;
   border: none;
   margin-bottom: 40px;
 }
@@ -2183,10 +2155,9 @@ input:-webkit-autofill{
   }
 }
 
-
 @keyframes fadein {
   0% {
-   opacity: 0;
+    opacity: 0;
   }
   100% {
     opacity: 1;
