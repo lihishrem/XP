@@ -367,6 +367,13 @@ ul.community_links li {
   height: 538px;
 }
 
+.aSkale {
+  margin-top: 10px;
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
 /* .padding{
     padding: 0px;
 }
@@ -434,7 +441,6 @@ ul.community_links li {
     position: relative;
     display: flex;
     margin: 0 auto;
-    top: 40%;
   }
 
   .blackBox {
@@ -513,5 +519,8 @@ ul.community_links li {
 
   .marginTopSkale {
     margin-top: 0px;
+  }
+  .aSkale {
+    font-size: 12px;
   }
 }

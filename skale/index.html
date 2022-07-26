@@ -9,20 +9,20 @@
 
   <meta name="twitter:card" content="summary_large_image" />
 
-  <meta name="twitter:title" content="Rocket Monsters" />
+  <meta name="twitter:title" content="Skale" />
   <meta name="twitter:site" content="@xpnetwork_" />
   <meta name="twitter:description" 
-  content="Rocket Monsters are expanding from Tezos to Harmony thanks to XP.NETWORK's multi-chain NFT bridge" />  
+  content="Skale - an Ethereum-native network optimized for Web3, NFTs, and games with zero gas fee" />  
   <meta name="twitter:image" itemprop="image" content="https://xp.network/assets/img/skale case study/skale meta.png" />
-  <meta property="og:title" content="Rocket Monsters" />
+  <meta property="og:title" content="Skale" />
 
   <meta property="og:image" itemprop="image" content="https://xp.network/assets/img/skale case study/skale meta.png" />
   <meta name="description" 
-  content="Rocket Monsters are expanding from Tezos to Harmony thanks to XP.NETWORK's multi-chain NFT bridge" />    
+  content="Skale - an Ethereum-native network optimized for Web3, NFTs, and games with zero gas fee" />    
   <meta property="og:description" 
-  content="Rocket Monsters are expanding from Tezos to Harmony thanks to XP.NETWORK's multi-chain NFT bridge" />  
+  content="Skale - an Ethereum-native network optimized for Web3, NFTs, and games with zero gas fee" />  
   
-  <title>XP-NETWORK | Rocket Monsters</title>
+  <title>XP-NETWORK | Skale</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
   <!-- owl.carousel -->
@@ -33,6 +33,10 @@
   <link rel="stylesheet" href="../other.css" />
   <!-- Responsive Css -->
   <link rel="stylesheet" href="../assets/css/responsive.css" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
   <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
 
   <link rel="stylesheet" href="./skale.css" />
@@ -206,7 +210,7 @@
     </header>
 
     <main>
-      <section class="opilous_hero_area skaleBg">
+      <section class="opilous_hero_area skaleBg" id="top">
       <div class="headerContainer" >
           <div class="opilous_hero flexRow mainHeader deskOnly">
             <h2 class="mainTitle" style="padding-top: 40px"> 
@@ -252,8 +256,26 @@
             
           </div>
         </div>
-        <a href="https://www.youtube.com/watch?v=Anb0ZSruWlw&t=6s&ab_channel=SKALENetwork" target="_blank" class="overviewImg deskOnly" ><img src="/assets/img/skale case study/play bttn.svg" class="playBtn deskOnly"  /></a>
-        <a href="https://www.youtube.com/watch?v=Anb0ZSruWlw&t=6s&ab_channel=SKALENetwork" target="_blank" class="overviewImg mobOnly"><img src="/assets/img/skale case study/play bttn.svg" class="playBtn mobOnly"/></a>
+        <a href="#popup1" class="overviewImg" >
+          <img src="/assets/img/skale case study/play bttn.svg" class="playBtn deskOnly"  />
+        </a>
+        <div id="popup1">
+          <div class="popup">
+            <iframe
+            id="popup_1"
+              class="popup-video"
+              src="https://www.youtube.com/embed/Anb0ZSruWlw"
+              height="80%" 
+              allowfullscreen="allowfullscreen"
+            ></iframe>
+            </div>
+          <div class="popup-close">
+            <a href="#" onclick="stop(1)">
+            <i class="fas fa-times-circle"></i>
+          </a>
+      </div>
+    </div>
+        <!-- <a href="https://www.youtube.com/watch?v=Anb0ZSruWlw&t=6s&ab_channel=SKALENetwork" target="_blank" class="overviewImg mobOnly"><img src="/assets/img/skale case study/play bttn.svg" class="playBtn mobOnly"/></a> -->
       </section>
 
       
@@ -274,7 +296,8 @@
                 <img src="/assets/img/skale case study/Rectangle 2173.png" class="desktop_only" style="border-radius: 20px;">
                 <img src="/assets/img/skale case study/mobile/1.png" class="mobileOnly" style="margin-top: 20px;">
               </div>
-              <br/><br/>
+              <br/>
+              <div class="aSkale"><a href="https://bridge.xp.network/">bridge.xp.network</a></div>
 
               
               <div class="content_boxes" style="padding-bottom:5px">
@@ -310,7 +333,9 @@
                 <img src="/assets/img/skale case study/Frame 2791.png" class="desktop_only" style="border-radius: 20px;">
                 <img src="/assets/img/skale case study/mobile/2.png" class="mobileOnly" style="margin-top: 20px;">
               </div>
-              <br/><br/>
+              <br/>
+              <div class="aSkale"><a href="https://skale.space/network" >skale.space/network</a></div>
+              
 
               <div class="content_boxes" style="padding-bottom:5px">
                 <div class="content_text">
@@ -501,6 +526,14 @@
   <script src="../assets/js/owl.carousel.min.js"></script>
   <script src="../assets/js/active.js"></script>
   <script src="../assets/js/parts.js"></script>
+  <script>
+    const stop = (id) =>{
+         var video = $(`#popup_${id}`).attr("src");
+         $(`#popup_${id}`).attr("src","");
+         $(`#popup_${id}`).attr("src",video);
+      }
+   
+  </script>
 </body>
 
 </html>

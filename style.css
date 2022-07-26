@@ -162,6 +162,10 @@ nav.nare_area {
 
 }
 
+.scroll-up #header li a:hover{
+color: #E22440 !important;
+}
+
 
 .scroll-up #header .navTriger {
   filter: brightness(0);
@@ -966,12 +970,14 @@ span.wave:after {
 
 .titlebridgeImgNav{
   cursor: pointer;
+  color: #FFFFFF;
   /* position: relative;
   top: 20px;
   left: -100px; */
 }
 
 .textbridgeImgNav{
+  color: #FFFFFF;
   cursor: pointer;
   font-weight: 400;
   font-size: 14px;
