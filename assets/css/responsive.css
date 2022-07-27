@@ -1,13 +1,12 @@
 /* Responsive */
 @keyframes repaint {
   from {
-    width: 99.999%
+    width: 99.999%;
   }
   to {
     width: 100%;
   }
 }
-
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 }
@@ -200,7 +199,7 @@
 
   .activeDrop .drop-menu {
     max-height: 1000px;
-    padding-top: 18px ;
+    padding-top: 18px;
     padding-bottom: 18px;
   }
 
@@ -238,7 +237,7 @@
     padding-left: 24px !important;*/
   }
 
-  .productsNavBox{
+  .productsNavBox {
     display: flex;
     flex-direction: column;
   }
@@ -246,18 +245,18 @@
   .drop-menu.resuouceMega .row {
     margin: 0;
   }
-  .productsNavBox .activeDrop .drop-menu{
+  .productsNavBox .activeDrop .drop-menu {
     padding-top: 0px !important;
   }
 
-  .productsNavBox{
+  .productsNavBox {
     margin: 0px;
     height: 380px !important;
     padding-top: 0px;
   }
 
-  .linkBoxNav:hover{
-    background-color: #F7F7F9;
+  .linkBoxNav:hover {
+    background-color: #f7f7f9;
   }
 
   .productsNavBox {
@@ -265,13 +264,13 @@
     gap: 0px;
   }
 
-  .bridgeImgNav{
+  .bridgeImgNav {
     background-image: url("/assets/img/prod/bridge\ card\ mob.png");
     width: 100vw;
     border-radius: 0px;
   }
 
-  .linkBoxNav{
+  .linkBoxNav {
     width: 100vw;
   }
 
@@ -348,6 +347,7 @@
   .mobileOnly {
     display: none !important;
   }
+  
 }
 
 @media only screen and (max-width: 767px) {
@@ -356,24 +356,24 @@
     top: 0px;
   } */
 
-  .navMobile #header{
+  .navMobile #header {
     position: fixed;
     transform: translateZ(0) !important;
     -moz-transform: translatez(0) !important;
     -ms-transform: translatez(0) !important;
     -o-transform: translatez(0) !important;
-    -webkit-transform: translateZ(0) ;
-    -webkit-font-smoothing: antialiased ;
+    -webkit-transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
   }
 
-  .scroll-down #header{
-    transform: translate3d(0,-100%,0);
+  .scroll-down #header {
+    transform: translate3d(0, -100%, 0);
   }
-  
-  .scroll-down #header .drop-menu{
-    transform: translate3d(0,-100%,0);
+
+  .scroll-down #header .drop-menu {
+    transform: translate3d(0, -100%, 0);
   }
-  
+
   .homePage .home_content {
     margin-bottom: 170px;
   }
@@ -389,7 +389,6 @@
   }
 
   #discover-the-bridge {
-   
   }
 
   .footer_top .row > div:first-child {
@@ -575,7 +574,6 @@
   .avastia_content.boxContent,
   .erlond_content.boxContent a {
     /*margin-bottom: 25px;*/
-
   }
 
   .barriers_content.boxContent a {
@@ -988,22 +986,28 @@
     margin-bottom: 0px;
   }
 
-  .flexWrapFeaturedVideos{
+  .flexWrapFeaturedVideos {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
-  
-  .featuredVideoImgMain{
-    margin:0 auto !important;
+
+  .featuredVideoImgMain {
+    margin: 0 auto !important;
   }
 
   .popup {
     width: 100%;
     height: 40%;
   }
-  
+  .popup-close {
+    top: 15%;
+  }
+
+  .popup-video {
+    object-fit: unset;
+  }
   img.opilousHeroBg {
     left: 0;
     top: auto;
@@ -1015,7 +1019,7 @@
     width: auto;
     height: auto;
   }
-  .impsPage .titleImpsMoob{
+  .impsPage .titleImpsMoob {
     padding-bottom: 50px;
   }
 } /* and (max-width: 767px) */
@@ -1048,10 +1052,10 @@
     padding-right: 10px;
   }
 
-  .brThunder{
+  .brThunder {
     display: none;
   }
-  .brMob{
+  .brMob {
     display: block;
   }
   .sideForm_container {
@@ -1070,7 +1074,7 @@
     padding: 10px 0 0 0px;
   }
 
-  .grants{
+  .grants {
     width: inherit;
     height: 540px;
     gap: 30px;

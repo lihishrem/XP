@@ -111,7 +111,7 @@ const resources = `
 <div class="row">
         <div class="col-6">
             <a href='https://docs.xp.network/' target="_blank" rel="noopener noreferrer" class="resLink">
-            <div class="resou_menu_box hover_background">
+            <div class="resou_menu_box hover_background resLink">
                 <img src="/assets/img/icons/Docs.svg" class="menu_icon">
                 <h6>Docs</h6>
                 <p>API documentation, tutorials, and other resources</p>
@@ -129,8 +129,8 @@ const resources = `
           
         </div>
         <div class="col-6">
-        <a href='/whitepaper'  class="resLink">
-            <div class="resou_menu_box hover_background">
+        <a href='/whitepaper'>
+            <div class="resou_menu_box hover_background resLink">
                 <img src="/assets/img/icons/Whitepaper.svg" class="menu_icon">
                 <h6>Whitepaper</h6>
                 <p>A closer look  at the architecture, bridging algorithm, and security</p>
@@ -139,7 +139,7 @@ const resources = `
         </div>
         <div class="col-6">
         <a href='https://github.com/xp-network/' target="_blank" rel="noopener noreferrer" class="resLink">
-            <div class="resou_menu_box hover_background">
+            <div class="resou_menu_box hover_background resLink">
                 <img src="/assets/img/icons/github_black.svg" class="menu_icon">
                 <h6>GitHub <span class="gitLate "> <span class="wave"></span><span class="lastCommitContainer">17 jan 2021</span></span></h6>
                 <p>The latest technical updates & code releases </p>
@@ -343,7 +343,7 @@ const header = `
       </a>
       <div class="linkBoxesNav">
        <a class="linkBoxNav" href="https://widget.xp.network/" target="_blank">
-        <label style="cursor: pointer;">
+        <label class="linkBoxNavTitleText">
           Bridge widget
         </label>
         <label class="linkBoxNavText">
@@ -351,7 +351,7 @@ const header = `
         </label>
       </a>
       <a class="linkBoxNav" href="/api/" target="_self">
-        <label style="cursor: pointer;">
+        <label class="linkBoxNavTitleText"">
           XPNET-JS API 
         </label>
         <label class="linkBoxNavText">
@@ -426,7 +426,7 @@ const header = `
         </div>
       </li>
       <li class="nav-item mega-menu" id>
-        <a href="/community" class="nav-link" id="link-community" onclick='return false;'>Community</a>
+        <a href="/community" class="nav-link" id="link-community2" onclick='return false;'>Community</a>
         <div class="drop-menu communityMegamenu">
           <div class="comm_megaIitem" onclick="window.open('/community', '_self')">
             <img src="/assets/img/xp-commu.svg" />
@@ -442,7 +442,6 @@ const header = `
             <img src="/assets/img/xp-stories.svg" />
             <div class="menuItemWrapper">
             <h6>XP Stories and news</h6>
-           
             <p class="mobileOnly"> A detailed look at XP.NETWORK updates</p>
             <a href="https://blog.xp.network/" class="black_text_btn smalBtn desktop_only" target="_blank" rel="noopener noreferrer"
               >Read blog -></a
@@ -548,6 +547,14 @@ $("#link-community").click(function () {
  }
   $(this).parent().toggleClass("activeDrop");
 });
+$("#link-community2").click(function () {
+  let a = $("#link-resources").parent().hasClass('activeDrop');
+  console.log("aaa",a)
+  if(a){
+   $("#link-resources").parent().removeClass("activeDrop")
+  }
+   $(this).parent().toggleClass("activeDrop");
+ });
 $("#link-resources").click(function () {
  let a = $("#link-community").parent().hasClass('activeDrop');
  if(a){

@@ -466,7 +466,7 @@ body {
 }
 
 .comm_megaIitem:hover .black_text_btn {
-  color: #e22440;
+  color: #e22440 !important;
 }
 
 /*.whiteBoxCont .boxContent > a {
