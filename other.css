@@ -1184,6 +1184,13 @@ section.feature_nft_area {
   background-color: black;
 }
 
+.hogHomiePage .hogHomieBg::before {
+  background-image: url("/assets/img/hogHomie/desktop/Background.png");
+  height: 550px;
+  top: 0px;
+  background-color: black;
+}
+
 .impsPage .impsBg::before {
   background-image: url("/assets/img/IMPs/imps\ bg.png");
   height: 600px;
@@ -1621,8 +1628,8 @@ input:-webkit-autofill {
     top: 0px;
   }
 
-  .skalePage .skaleBg::before {
-    background-image: url("/assets/img/skale\ case\ study/mobile/background mob.png");
+  .hogHomiePage .hogHomie::before {
+    background-image: url("/assets/img/hogHomie/mobile/background.png");
     height: 500px;
     top: 0px;
   }

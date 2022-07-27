@@ -540,26 +540,24 @@ $("span.navTriger").click(function () {
 
 });
 $("#link-community").click(function () {
- let a = $("#link-resources").parent().hasClass('activeDrop');
- console.log("aaa",a)
- if(a){
+ 
   $("#link-resources").parent().removeClass("activeDrop")
- }
+  $("#link-community2").parent().removeClass("activeDrop")
+ 
   $(this).parent().toggleClass("activeDrop");
 });
 $("#link-community2").click(function () {
-  let a = $("#link-resources").parent().hasClass('activeDrop');
-  console.log("aaa",a)
-  if(a){
+  
    $("#link-resources").parent().removeClass("activeDrop")
-  }
+   $("#link-community").parent().removeClass("activeDrop")
+  
    $(this).parent().toggleClass("activeDrop");
  });
 $("#link-resources").click(function () {
- let a = $("#link-community").parent().hasClass('activeDrop');
- if(a){
+
    $("#link-community").parent().removeClass("activeDrop")
- }
+   $("#link-community2").parent().removeClass("activeDrop")
+ 
   $(this).parent().toggleClass("activeDrop");
 });
 </script>
