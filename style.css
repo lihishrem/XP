@@ -125,47 +125,45 @@ nav.nare_area {
   z-index: 100;
   /* transition: 0.02s; */
   transition: all 300ms ease-in-out;
-
 }
 
-.scroll-down #header{
-  transform: translate3d(0,-100%,0);
+.scroll-down #header {
+  transform: translate3d(0, -100%, 0);
 }
 
-.scroll-down #header .drop-menu{
-  transform: translate3d(0,-100%,0);
+.scroll-down #header .drop-menu {
+  transform: translate3d(0, -100%, 0);
 }
 
-
-.scroll-up #header{ 
-  filter: drop-shadow(0 -10px 20px rgb(170,170,170));
-  background-color: #FFFFFF !important;
+.scroll-up #header {
+  filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+  background-color: #ffffff !important;
 }
 
-
-.scroll-up #header a{ 
-  color: #0E1220 !important;
+.scroll-up #header a {
+  color: #0e1220 !important;
 }
 
-.scroll-up #header li a img{ 
+.scroll-up #header li a img {
   filter: brightness(0) !important;
 }
 
-
-.scroll-up #header li a img{ 
+.scroll-up #header li a img {
   filter: brightness(0) !important;
 }
 
-.scroll-up #header .xpLogoMain{ 
+.scroll-up #header .xpLogoMain {
   content: url("/assets/img/logo.svg") !important;
   opacity: unset;
-
 }
 
-.scroll-up #header li a:hover{
-color: #E22440 !important;
+.scroll-up #header li a:hover {
+  color: #e22440 !important;
 }
 
+.scroll-up #header li a img:hover {
+  filter: none !important;
+}
 
 .scroll-up #header .navTriger {
   filter: brightness(0);
@@ -192,7 +190,6 @@ color: #E22440 !important;
 .nav-not-active{
   background-color: transparent !important;
 } */
-
 
 .nav_menu_area {
   display: -webkit-box;
@@ -457,13 +454,13 @@ img.box_content_img {
   flex-direction: column;
 }
 
-.flexWrapFeaturedVideos{
+.flexWrapFeaturedVideos {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.featuredVideoImgMain{
+.featuredVideoImgMain {
   width: 317px;
   height: 179px;
   border-radius: 10px;
@@ -917,7 +914,7 @@ span.wave:after {
   animation: sonarWave 2s linear infinite;
 }
 
-.productsNavBox{
+.productsNavBox {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -930,11 +927,11 @@ span.wave:after {
   /* left: 750px;
   top: 74px; */
 
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 16px;
 }
 
-.bridgeImgNav{
+.bridgeImgNav {
   width: 300px;
   height: 218px;
   background-image: url("/assets/img/prod/bridge\ card\ desk.png");
@@ -943,70 +940,67 @@ span.wave:after {
   z-index: 3;
   display: flex !important;
   flex-direction: column;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 120%;
   align-items: flex-end;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 16px;
   align-items: baseline;
   gap: 8px;
   cursor: pointer;
 }
 
-
-.bridgeImgNav:hover{
-  color: #FFFFFF;
+.bridgeImgNav:hover {
+  color: #ffffff;
   cursor: pointer;
 }
 
-
-.bridgeImgNav:hover .aDicoverImgNav{
-  color: #E22440;
+.bridgeImgNav:hover .aDicoverImgNav {
+  color: #e22440;
   cursor: pointer;
 }
 
-.titlebridgeImgNav{
+.titlebridgeImgNav {
   cursor: pointer;
-  color: #FFFFFF;
+  color: #ffffff;
   /* position: relative;
   top: 20px;
   left: -100px; */
 }
 
-.textbridgeImgNav{
-  color: #FFFFFF;
+.textbridgeImgNav {
+  color: #ffffff;
   cursor: pointer;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
 }
 
-.aDicoverImgNav{
+.aDicoverImgNav {
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;
   text-decoration: none;
-  color: #FFFFFF ;
+  color: #ffffff;
   margin-top: 20px;
 }
 
-
-.linkBoxesNav{
+.linkBoxesNav {
   display: flex;
   flex-direction: column;
   width: 300px;
   cursor: pointer;
 }
 
-.linkBoxNav{
+.linkBoxNav {
   padding: 16px 24px;
   gap: 10px;
   display: flex;
   flex-direction: column;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1016,11 +1010,11 @@ span.wave:after {
   cursor: pointer;
 }
 
-.linkBoxNav:hover{
-  background: #F2F2F4;
+.linkBoxNav:hover {
+  background: #f2f2f4;
   color: #000000;
 }
-.linkBoxNavText{
+.linkBoxNavText {
   font-weight: 400;
   font-size: 14px;
   line-height: 180%;
@@ -1128,7 +1122,6 @@ ul.widget_link li:not(:last-child) {
   padding-top: 70px;
   max-width: 483px;
   margin-top: 60px;
-
 }
 
 .api_container {
@@ -1629,7 +1622,6 @@ section.usecase_hero_area {
   padding: 80px 0;
   max-width: 640px;
   margin: 0 auto;
-
 }
 
 .austin_card {
@@ -2198,7 +2190,8 @@ section.opilous_hero_area {
   padding: 193px 0 271px;
 }
 
-img.opilousHeroBg, .snafuHeroBg {
+img.opilousHeroBg,
+.snafuHeroBg {
   position: absolute;
   z-index: -1;
   left: 50%;
@@ -2374,9 +2367,9 @@ body.flate_menu a.xpnet-balance {
   display: none;
 }
 
-.newsletersInput{
+.newsletersInput {
   box-sizing: border-box;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -2390,28 +2383,26 @@ body.flate_menu a.xpnet-balance {
 
   width: 197px;
   height: 39px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.5;
-  background: #2B2B2C;
-  border: 1px solid #3F3F42;
+  background: #2b2b2c;
+  border: 1px solid #3f3f42;
   border-radius: 8px;
   /* background-image: url("/assets/img/send.png"); */
   background-repeat: no-repeat;
   background-position: center right;
 }
 
-.newsletersInput:focus{
-  
+.newsletersInput:focus {
 }
 
-.sendNewsBtn{
+.sendNewsBtn {
   background: none;
   border: none;
   position: relative;
   top: -30px;
   left: 160px;
 }
-
 
 /* 
 *,
@@ -2435,7 +2426,13 @@ body {
   justify-content: center;
 } */
 
-#popup,#popup1,#popup2,#popup3,#popup4,#popup5,#popup6 {
+#popup,
+#popup1,
+#popup2,
+#popup3,
+#popup4,
+#popup5,
+#popup6 {
   background-color: rgb(25, 25, 25);
   position: fixed;
   left: 0;
@@ -2454,7 +2451,13 @@ body {
   -ms-transition: 500ms all;
   -o-transition: 500ms all;
 }
-#popup:target,#popup1:target,#popup2:target,#popup3:target,#popup4:target,#popup5:target,#popup6:target {
+#popup:target,
+#popup1:target,
+#popup2:target,
+#popup3:target,
+#popup4:target,
+#popup5:target,
+#popup6:target {
   opacity: 1;
   visibility: visible;
 }
@@ -2463,7 +2466,7 @@ body {
   width: 80%;
   height: 80%;
   overflow: hidden;
-  transform: scale(0.6);
+  /* transform: scale(0.6);
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
   -ms-transform: scale(0.6);
@@ -2472,31 +2475,37 @@ body {
   -webkit-transition: 500ms all;
   -moz-transition: 500ms all;
   -ms-transition: 500ms all;
-  -o-transition: 500ms all;
+  -o-transition: 500ms all; */
   position: relative;
 }
 
 .popup-video {
-  width: 100%;
+  width: 100vw;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
-#popup:target, #popup1:target .popup,#popup2:target .popup,#popup3:target .popup,#popup4:target .popup ,#popup5:target .popup,#popup6:target .popup {
-  transform: scale(1);
+#popup:target,
+#popup1:target .popup,
+#popup2:target .popup,
+#popup3:target .popup,
+#popup4:target .popup,
+#popup5:target .popup,
+#popup6:target .popup {
+  /* transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
-  -o-transform: scale(1);
+  -o-transform: scale(1); */
 }
 
 a i {
   font-size: 150px;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
+  /* -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease; */
 }
 a i:hover {
   color: black;
@@ -2505,24 +2514,24 @@ a i:hover {
 .popup-close {
   position: absolute;
   color: #000;
-  left: 50%;
-  top: 10%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  top: 13%;
+  /* transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%); */
 }
 .popup-close i {
   color: white;
   font-size: 50px;
   transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
+  /* -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease; */
 }
 .popup-close a i:hover {
   color: red;
-  font-size: 70px;
+  /* font-size: 70px; */
 }

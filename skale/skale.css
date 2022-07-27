@@ -513,6 +513,7 @@ ul.community_links li {
     height: 33.12px;
   }
   .videoBox {
+    left: 0;
     width: 100vw;
     height: 220px;
   }
