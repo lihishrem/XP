@@ -1628,7 +1628,13 @@ input:-webkit-autofill {
     top: 0px;
   }
 
-  .hogHomiePage .hogHomie::before {
+  .skalePage .skaleBg::before {
+    background-image: url("/assets/img/skale\ case\ study/mobile/background mob.png");
+    height: 500px;
+    top: 0px;
+  }
+
+  .hogHomiePage .hogHomieBg::before {
     background-image: url("/assets/img/hogHomie/mobile/background.png");
     height: 500px;
     top: 0px;
