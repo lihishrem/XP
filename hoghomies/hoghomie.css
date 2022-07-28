@@ -203,7 +203,7 @@
   height: 277px;
   background: #d20f4a;
   border-radius: 20px;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .title {
@@ -365,8 +365,8 @@ ul.community_links li {
   justify-content: flex-end;
 }
 
-.ulDisc{
-  padding: 16px;
+.ulDisc {
+  padding: 0px 16px 0px;
 }
 
 .ulDisc li {
@@ -422,7 +422,7 @@ ul.community_links li {
     margin-top: 20px;
   }
   .projectOverview {
-    padding: 24px 30px 36px;
+    padding: 24px 30px 0px;
     height: auto;
     width: 90vw;
     border-radius: 0px 0px 20px 20px;
@@ -431,7 +431,7 @@ ul.community_links li {
     height: 365px;
     width: 90vw;
     border-radius: 20px 20px 0px 0px;
-    margin-top: -5px;
+    margin-top: -35px;
     background-image: url("/assets/img/hogHomie/mobile/overview.png");
     justify-content: center;
     align-items: center;
@@ -459,6 +459,7 @@ ul.community_links li {
     gap: 24px;
     width: 90vw;
     height: auto;
+    margin-top: 30px;
   }
   .pBlackBox {
     width: 80vw;
