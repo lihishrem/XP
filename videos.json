@@ -1,32 +1,32 @@
 {"videosMain":[
 	{
 		"popup":"1",
-		"srcEmbed":"https://www.youtube.com/embed/aEVbVgnrT5c",
-		"srcImg":"/assets/img/home/videos section/bridge attack.png"
+		"srcEmbed":"https://www.youtube.com/embed/4MiPf6mnnn0",
+		"srcImg":"/assets/img/home/videos section/Widget V2.png"
 	},
 	{
 		"popup":"2",
-		"srcEmbed":"https://www.youtube.com/embed/SQe8zx-0bo0",
-		"srcImg":"/assets/img/home/videos section/bridge security.png"
+		"srcEmbed":"https://www.youtube.com/embed/Xe5ANZtHGAE",
+		"srcImg":"/assets/img/home/videos section/FT, NFT and SFT.png"
 	},
 	{
 		"popup": "3",
-		"srcEmbed": "https://www.youtube.com/embed/wQx1J7FzT2o",
-		"srcImg": "/assets/img/home/videos section/evm.png"
+		"srcEmbed": "https://www.youtube.com/embed/aEVbVgnrT5c",
+		"srcImg": "/assets/img/home/videos section/bridge attack.png"
 	},
 	{
 		"popup":"4",
-		"srcEmbed":"https://www.youtube.com/embed/H5YuChS32YE",
-		"srcImg": "/assets/img/home/videos section/Frame 1.png"
+		"srcEmbed":"https://www.youtube.com/embed/SQe8zx-0bo0",
+		"srcImg": "/assets/img/home/videos section/bridge security.png"
 	},
 	{
 		"popup":"5",
-		"srcEmbed":"https://www.youtube.com/embed/QvcWJDh4xWY",
-		"srcImg":"/assets/img/home/videos section/Frame 3.png"
+		"srcEmbed":"https://www.youtube.com/embed/wQx1J7FzT2o",
+		"srcImg":"/assets/img/home/videos section/evm.png"
 	},
 	{
 		"popup":"6",
-		"srcEmbed":"https://www.youtube.com/embed/H9cIt5BSSxc",
-		"srcImg":"/assets/img/home/videos section/Frame 4.png"
+		"srcEmbed":"https://www.youtube.com/embed/H5YuChS32YE",
+		"srcImg":"/assets/img/home/videos section/Frame 1.png"
 	}
 ]}
