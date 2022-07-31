@@ -551,6 +551,11 @@
       $(`#popup_${id}`).attr("src", video);
     }
 
+    window.addEventListener('popstate', function (event) {
+      console.log("go back clicked");
+      stop(1);
+    })
+
 
 
   </script>

@@ -1534,7 +1534,13 @@
     }
     loadVideos();
 
-
+  </script>
+  <script>
+    window.addEventListener('popstate', function (event) {
+      console.log(window.location.href.toString().slice(-1));
+      let playingVideo = window.location.href.toString().slice(-1);
+      stop(playingVideo);
+    })
   </script>
 </body>
 

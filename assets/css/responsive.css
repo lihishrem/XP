@@ -39,7 +39,12 @@
   }
 
   body.active_menu {
+    height: 100%;
     overflow: hidden;
+    width: 100%;
+    position: fixed;
+    /* overflow: hidden !important;
+    height: 100vh !important; */
   }
 
   .blackBoxCont {
@@ -84,7 +89,7 @@
     -ms-flex-pack: start;
     justify-content: flex-start;
     padding-top: 23px;
-    overflow: auto;
+    overflow-y: scroll;
     opacity: 0;
     visibility: hidden;
     transition: 0s;
@@ -93,7 +98,7 @@
   body.active_menu .nav_menu_area {
     opacity: 1;
     visibility: visible;
-    height: 100vh !important;
+    height: auto !important;
   }
 
   a.xpnet-balance.mobileOnly {
@@ -347,7 +352,6 @@
   .mobileOnly {
     display: none !important;
   }
-  
 }
 
 @media only screen and (max-width: 767px) {
