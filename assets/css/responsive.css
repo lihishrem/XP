@@ -35,6 +35,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    height: 100%;
     /* overflow-y:unset; */
   }
 
@@ -89,7 +90,7 @@
     -ms-flex-pack: start;
     justify-content: flex-start;
     padding-top: 23px;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
     opacity: 0;
     visibility: hidden;
     transition: 0s;
@@ -99,6 +100,7 @@
     opacity: 1;
     visibility: visible;
     height: auto !important;
+    /* height: 100vh !important; */
   }
 
   a.xpnet-balance.mobileOnly {
