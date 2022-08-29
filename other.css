@@ -1198,6 +1198,13 @@ section.feature_nft_area {
   background-color: black;
 }
 
+.cryptoArcadePage .cryptoArcadeBg::before {
+  background-image: url("/assets/img/cryptoArcade/Background.png");
+  height: 550px;
+  top: 0px;
+  background-color: black;
+}
+
 .impsPage .impsBg::before {
   background-image: url("/assets/img/IMPs/imps\ bg.png");
   height: 600px;
@@ -1649,6 +1656,12 @@ input:-webkit-autofill {
 
   .alaskaGoldPage .alaskaGoldBg::before {
     background-image: url("/assets/img/Alaska\ Gold/mobile/background.png");
+    height: 450px;
+    top: 0px;
+  }
+
+  .cryptoArcadePage .cryptoArcadeBg::before {
+    background-image: url("/assets/img/cryptoArcade/mobile/Background.png");
     height: 450px;
     top: 0px;
   }
