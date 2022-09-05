@@ -1205,6 +1205,12 @@ section.feature_nft_area {
   background-color: black;
 }
 
+.forestNationPage .forestNationBg::before {
+  background-image: url("/assets/img/forestnation\ case\ study/desktop/Background.png");
+  height: 600px;
+  top: 0px;
+}
+
 .impsPage .impsBg::before {
   background-image: url("/assets/img/IMPs/imps\ bg.png");
   height: 600px;
@@ -1644,6 +1650,13 @@ input:-webkit-autofill {
 
   .skalePage .skaleBg::before {
     background-image: url("/assets/img/skale\ case\ study/mobile/background mob.png");
+    height: 500px;
+    top: 0px;
+  }
+
+  .forestNationPage .forestNationBg::before {
+    background-image: url("/assets/img/forestnation\ case\ study/mob/background.png");
+    background-size: cover;
     height: 500px;
     top: 0px;
   }
