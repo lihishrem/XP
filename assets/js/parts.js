@@ -128,6 +128,7 @@ const resources = `
             </a>
           
         </div>
+        
         <div class="col-6">
         <a href='/whitepaper'>
             <div class="resou_menu_box hover_background resLink">
@@ -209,6 +210,7 @@ const footer = `
           <li><a href="/whitepaper" >Whitepaper</a></li>
           <li><a href="https://docs.xp.network/" target="_blank" rel="noopener noreferrer">Docs</a></li>
           <li><a href='https://docs.xp.network/docs/roadmap/'   target="_blank" rel="noopener noreferrer">Roadmap</a></li>
+          <li><a href='/security' rel="noopener noreferrer">Bridge Security</a></li>
           <li>
             <a href="https://github.com/xp-network/" target="_blank" rel="noopener noreferrer"
               >GitHub
@@ -308,6 +310,7 @@ const header = `
           ? "logo.svg"
           : (window.location.pathname.includes("/team") ||
               window.location.pathname.includes("about-us") ||
+              window.location.pathname.includes("security") ||
               window.location.pathname === "/" ||
               window.location.pathname.includes("backers")) &&
             !document.body.classList.contains("active_menu")
